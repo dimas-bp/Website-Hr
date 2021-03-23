@@ -137,7 +137,7 @@
                                                                     } else {
                                                                         echo 'User';
                                                                     } ?>
-                            <small><?= date('h-M-Y') ?></small>
+                            <small><?= date('l, d-m-Y') ?></small>
                         </p>
                     </li>
                     <!-- Menu Body -->

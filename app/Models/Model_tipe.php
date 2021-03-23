@@ -15,4 +15,18 @@ class Model_tipe extends Model
     {
         $this->db->table('tb_tipe')->insert($data);
     }
+
+    public function edit($data)
+    {
+        $this->db->table('tb_tipe')
+            ->where('id_tipe', $data['id_tipe'])
+            ->update($data);
+    }
+
+    public function delete_tipe($data)
+    {
+        $this->db->table('tb_tipe')
+            ->where('id_tipe', $data['id_tipe'])
+            ->delete($data);
+    }
 }

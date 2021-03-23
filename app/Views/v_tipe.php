@@ -26,6 +26,7 @@
                         <tr class="bg-primary">
                             <th width="50px">No</th>
                             <th>Tipe</th>
+                            <th width="100px">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -34,6 +35,10 @@
                             <tr>
                                 <td><?= $no++; ?></td>
                                 <td><?= $value['tipe_kar']; ?></td>
+                                <td>
+                                    <button class="btn btn-xs btn-warning" data-toggle="modal" data-target="#edit<?= $value['id_tipe']; ?>">Edit</button>
+                                    <button class="btn btn-xs btn-danger" data-toggle="modal" data-target="#delete<?= $value['id_tipe']; ?>">Hapus</button>
+                                </td>
                             </tr>
                         <?php } ?>
                     </tbody>
@@ -74,4 +79,61 @@
     </div>
     <!-- /.modal-dialog -->
 </div>
-<!-- /.modal -->
+<!-- /.modal add -->
+
+<!-- modal edit tipe -->
+<?php foreach ($tipe as $key => $value) { ?>
+    <div class="modal fade" id="edit<?= $value['id_tipe']; ?>">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Edit Tipe</h4>
+                </div>
+                <div class="modal-body">
+                    <?php
+                    echo form_open('tipe/edit/' . $value['id_tipe'])
+                    ?>
+                    <div class="form-group">
+                        <label>Tipe</label>
+                        <input name="tipe_kar" value="<?= $value['tipe_kar']; ?>" class="form-control" placeholder="Tipe" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Update</button>
+                </div>
+                <?php echo form_close() ?>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+<?php } ?>
+<!-- /.modal edit -->
+
+<!-- modal delete tipe -->
+<?php foreach ($tipe as $key => $value) { ?>
+    <div class="modal fade" id="delete<?= $value['id_tipe']; ?>">
+        <div class="modal-dialog modal-danger">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Hapus Tipe</h4>
+                </div>
+                <div class="modal-body">
+                    Apakah Anda Yakin Ingin Hapus <?= $value['tipe_kar']; ?>..?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Cancel</button>
+                    <a href="<?= base_url('tipe/delete' . $value['id_tipe']) ?>" type="submit" class="btn btn-primary">Delete</a>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+<?php } ?>
+<!-- /.modal delete -->

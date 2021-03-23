@@ -29,4 +29,25 @@ class Tipe extends BaseController
         session()->setFlashdata('pesan', 'Data Berhasil Di Tambahkan !!!');
         return redirect()->to(base_url('tipe'));
     }
+
+    public function edit($id_tipe)
+    {
+        $data = array(
+            'id_tipe' => $id_tipe,
+            'tipe_kar' => $this->request->getPost(),
+        );
+        $this->Model_tipe->add($data);
+        session()->setFlashdata('pesan', 'Data Berhasil Di Update !!!');
+        return redirect()->to(base_url('tipe'));
+    }
+
+    public function delete($id_tipe)
+    {
+        $data = array(
+            'id_tipe' => $id_tipe,
+        );
+        $this->Model_tipe->delete_tipe($data);
+        session()->setFlashdata('pesan', 'Data Berhasil Di Hapus !!!');
+        return redirect()->to(base_url('tipe'));
+    }
 }
