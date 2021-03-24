@@ -41,6 +41,7 @@ class Filters extends BaseConfig
 			'Filter_auth' => ['except' => [
 				'home', 'home/*',
 				'tipe', 'tipe/*',
+				'calkar', 'calkar/*',
 			]],
 			'toolbar',
 			// 'honeypot',

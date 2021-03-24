@@ -74,4 +74,4 @@
     </div>
     <!-- /.modal-dialog -->
 </div>
-<!-- /.modal -->
+<!-- /.modal add-->

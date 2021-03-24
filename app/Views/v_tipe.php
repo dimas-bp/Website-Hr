@@ -115,8 +115,8 @@
 
 <!-- modal delete tipe -->
 <?php foreach ($tipe as $key => $value) { ?>
-    <div class="modal fade" id="delete<?= $value['id_tipe']; ?>">
-        <div class="modal-dialog modal-danger">
+    <div class="modal modal-danger fade" id="delete<?= $value['id_tipe']; ?>">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -124,7 +124,7 @@
                     <h4 class="modal-title">Hapus Tipe</h4>
                 </div>
                 <div class="modal-body">
-                    Apakah Anda Yakin Ingin Hapus <?= $value['tipe_kar']; ?>..?
+                    Apakah Anda Yakin Ingin Hapus <b> <?= $value['tipe_kar']; ?>...?</b>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Cancel</button>
