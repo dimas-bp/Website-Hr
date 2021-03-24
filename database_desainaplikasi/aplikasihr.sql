@@ -67,8 +67,8 @@ CREATE TABLE IF NOT EXISTS `kehadiran` (
 -- Dumping structure for table aplikasi_hr_gink.user
 CREATE TABLE IF NOT EXISTS `user` (
   `id_user` int(11) unsigned NOT NULL,
-  `namauser` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
+  `nm_user` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
   `foto` varchar(50) NOT NULL,
   PRIMARY KEY (`id_user`)
