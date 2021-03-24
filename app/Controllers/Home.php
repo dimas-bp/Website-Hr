@@ -6,10 +6,10 @@ class Home extends BaseController
 {
 	public function index()
 	{
-		$data = array(
-			'title' => 'Home',
-			'isi' 	=> 'v_home'
-		);
-		return view('layout/v_wrapper', $data);
+		$data = [
+			'title' => 'HR GiNK',
+			'subtitle' => 'Home',
+		];
+		return view('v_home', $data);
 	}
 }

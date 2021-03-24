@@ -1,109 +1,50 @@
-<div class="row">
-    <div class="col-lg-6 col-xs-6">
-        <!-- small box -->
-        <div class="small-box bg-aqua">
-            <div class="inner">
-                <h3>150</h3>
-                <p>Data Karyawan</p>
-            </div>
-            <div class="icon">
-                <i class="ion-ios-people"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-        </div>
-    </div>
-    <!-- ./col -->
-    <div class="col-lg-6 col-xs-6">
-        <!-- small box -->
-        <div class="small-box bg-green">
-            <div class="inner">
-                <h3>53</h3>
+<?= $this->extend('template/template-frontend') ?>
 
-                <p>Data Calon Karyawan</p>
+<?= $this->section('content') ?>
+<div class="col-sm-12">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="<?= base_url('gambar/girl.jpg') ?>" alt="First slide">
             </div>
-            <div class="icon">
-                <i class="ion-person-stalker"></i>
+            <div class="item">
+                <img src="<?= base_url('gambar/gojo.jpg') ?>" alt="Second slide">
             </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <div class="item">
+                <img src="<?= base_url('gambar/rental.png') ?>" alt="Third slide">
+            </div>
         </div>
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+            <span class="fa fa-angle-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <span class="fa fa-angle-right"></span>
+        </a>
     </div>
-    <!-- ./col -->
+    <!-- /.box-body -->
 </div>
-<!-- Main content -->
-<section class="content">
-    <div class="row">
-        <div class="col-md-3">
-            <div class="box box-solid">
-                <div class="box-header with-border">
-                    <h4 class="box-title">Daftar Acara</h4>
-                </div>
-                <div class="box-body">
-                    <!-- the events -->
-                    <div id="external-events">
-                        <div class="external-event bg-green">Meeting</div>
-                        <div class="external-event bg-yellow">Go home</div>
-                        <div class="external-event bg-aqua">Do homework</div>
-                        <div class="external-event bg-light-blue">Work on UI design</div>
-                        <div class="external-event bg-red">Sleep tight</div>
-                        <div class="checkbox">
-                            <label for="drop-remove">
-                                <input type="checkbox" id="drop-remove">
-                                remove after drop
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.box-body -->
-            </div>
-            <!-- /. box -->
-            <div class="box box-solid">
-                <div class="box-header with-border">
-                    <h3 class="box-title">Buat Acara</h3>
-                </div>
-                <div class="box-body">
-                    <div class="btn-group" style="width: 100%; margin-bottom: 10px;">
-                        <!--<button type="button" id="color-chooser-btn" class="btn btn-info btn-block dropdown-toggle" data-toggle="dropdown">Color <span class="caret"></span></button>-->
-                        <ul class="fc-color-picker" id="color-chooser">
-                            <li><a class="text-aqua" href="#"><i class="fa fa-square"></i></a></li>
-                            <li><a class="text-blue" href="#"><i class="fa fa-square"></i></a></li>
-                            <li><a class="text-light-blue" href="#"><i class="fa fa-square"></i></a></li>
-                            <li><a class="text-teal" href="#"><i class="fa fa-square"></i></a></li>
-                            <li><a class="text-yellow" href="#"><i class="fa fa-square"></i></a></li>
-                            <li><a class="text-orange" href="#"><i class="fa fa-square"></i></a></li>
-                            <li><a class="text-green" href="#"><i class="fa fa-square"></i></a></li>
-                            <li><a class="text-lime" href="#"><i class="fa fa-square"></i></a></li>
-                            <li><a class="text-red" href="#"><i class="fa fa-square"></i></a></li>
-                            <li><a class="text-purple" href="#"><i class="fa fa-square"></i></a></li>
-                            <li><a class="text-fuchsia" href="#"><i class="fa fa-square"></i></a></li>
-                            <li><a class="text-muted" href="#"><i class="fa fa-square"></i></a></li>
-                            <li><a class="text-navy" href="#"><i class="fa fa-square"></i></a></li>
-                        </ul>
-                    </div>
-                    <!-- /btn-group -->
-                    <div class="input-group">
-                        <input id="new-event" type="text" class="form-control" placeholder="Event Title">
+</div>
 
-                        <div class="input-group-btn">
-                            <button id="add-new-event" type="button" class="btn btn-primary btn-flat">Add</button>
-                        </div>
-                        <!-- /btn-group -->
-                    </div>
-                    <!-- /input-group -->
-                </div>
-            </div>
-        </div>
-        <!-- /.col -->
-        <div class="col-md-9">
-            <div class="box box-primary">
-                <div class="box-body no-padding">
-                    <!-- THE CALENDAR -->
-                    <div id="calendar"></div>
-                </div>
-                <!-- /.box-body -->
-            </div>
-            <!-- /. box -->
-        </div>
-        <!-- /.col -->
-    </div>
-    <!-- /.row -->
-</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?= $this->endSection() ?>
