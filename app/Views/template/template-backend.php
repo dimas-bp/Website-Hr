@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 2 | Dashboard</title>
+    <title><?= $title ?> | <?= $subtitle ?></title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -184,13 +184,13 @@
                         <!-- User Account: style can be found in dropdown.less -->
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <img src="<?= base_url('gambar/' . session()->get('foto')) ?>" class="user-image" alt="User Image">
+                                <img src="<?= base_url('foto/' . session()->get('foto')) ?>" class="user-image" alt="User Image">
                                 <span class="hidden-xs"><?= session()->get('nama_user') ?></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- User image -->
                                 <li class="user-header">
-                                    <img src="<?= base_url('gambar/' . session()->get('foto')) ?>" class="img-circle" alt="User Image">
+                                    <img src="<?= base_url('foto/' . session()->get('foto')) ?>" class="img-circle" alt="User Image">
 
                                     <p>
                                         <?= session()->get('nama_user') ?> - <?php if (session()->get('level') == 1) {
@@ -229,7 +229,7 @@
                     <li class="header">MENU</li>
                     <li class="treeview">
                         <a href="#">
-                            <i class="fa fa-pie-chart"></i>
+                            <i class="fa fa-users"></i>
                             <span>Karyawan</span>
                             <span class="pull-right-container">
                                 <i class="fa fa-angle-left pull-right"></i>
@@ -237,13 +237,13 @@
                         </a>
                         <ul class="treeview-menu">
                             <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> Daftar Karyawan</a></li>
-                            <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Daftar Kehadiran</a></li>
+                            <li><a href="<?= base_url('hadir') ?>"><i class="fa fa-circle-o"></i> Daftar Kehadiran</a></li>
                             <li><a href="<?= base_url('tipe') ?>"><i class="fa fa-circle-o"></i> Tipe Karyawan</a></li>
                         </ul>
                     </li>
                     <li class="treeview">
                         <a href="#">
-                            <i class="fa fa-laptop"></i>
+                            <i class="fa fa-user"></i>
                             <span>Calon Karyawan</span>
                             <span class="pull-right-container">
                                 <i class="fa fa-angle-left pull-right"></i>
@@ -256,7 +256,7 @@
                     </li>
                     <li>
                         <a href="pages/calendar.html">
-                            <i class="fa fa-calendar"></i> <span>Profil</span>
+                            <i class="fa fa-calendar"></i> <span>Jadwal</span>
                             <span class="pull-right-container">
                                 <small class="label pull-right bg-red">3</small>
                                 <small class="label pull-right bg-blue">17</small>
@@ -264,13 +264,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="pages/mailbox/mailbox.html">
-                            <i class="fa fa-envelope"></i> <span>Mailbox</span>
-                            <span class="pull-right-container">
-                                <small class="label pull-right bg-yellow">12</small>
-                                <small class="label pull-right bg-green">16</small>
-                                <small class="label pull-right bg-red">5</small>
-                            </span>
+                        <a href="<?= base_url('user') ?>">
+                            <i class="fa fa-user"></i> <span>User</span>
                         </a>
                     </li>
                 </ul>
@@ -283,11 +278,11 @@
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <h1>
-                    Dashboard
+                    <?= $subtitle ?>
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                    <li class="active"></li>
+                    <li><a href="<?= base_url('admin') ?>"><i class="fa fa-dashboard"></i> Home</a></li>
+                    <li class="active"><?= $subtitle ?></li>
                 </ol>
             </section>
 

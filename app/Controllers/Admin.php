@@ -8,6 +8,10 @@ class Admin extends BaseController
 {
 	public function index()
 	{
-		return view('admin/v_dashboard');
+		$data = [
+			'title' => 'HR GiNK',
+			'subtitle' => 'Dashboard',
+		];
+		return view('admin/v_dashboard', $data);
 	}
 }

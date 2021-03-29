@@ -46,6 +46,9 @@ class Filters extends BaseConfig
 					'home', 'home/*',
 					'/',
 					'admin', 'admin/*',
+					'tipe', 'tipe/*',
+					'hadir', 'hadir/*',
+					'user', 'user/*',
 				]
 			],
 			'toolbar',
