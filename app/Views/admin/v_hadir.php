@@ -87,8 +87,15 @@
                     <input name="nm_kehadiran" class="form-control" placeholder="Masukkan Nama" required>
                 </div>
                 <div class="form-group">
-                    <label>tipe_kar</label>
-                    <input name="tipe_kar" class="form-control" placeholder="Masukkan Tipe" required>
+                    <label>Tipe karyawan</label>
+                    <select name="tipe_kar" class="form-control">>
+        <option value="" holder disabled selected class="btn btn-secondary disabled" >Pilih kategori</option>
+        <option value="Tetap"  class="btn btn-primary">Tetap</option>
+        <option value="Kontrak" class="btn btn-primary">Kontrak</option>
+        <option value="Freelance" class="btn btn-primary">Freelance</option>
+    </select>
+    
+                    <!-- <input name="tipe_kar" class="form-control" placeholder="Masukkan Tipe" required> -->
                 </div>
                 <div class="form-group">
                     <label>Izin</label>
@@ -133,10 +140,20 @@
                         <label>Nama Karyawan</label>
                         <input name="nm_kehadiran" value="<?= $value['nm_kehadiran']; ?>" class="form-control" placeholder="Masukkan Tipe" required>
                     </div>
+
+
                     <div class="form-group">
-                        <label>Tipe</label>
-                        <input name="tipe_kar" value="<?= $value['tipe_kar']; ?>" class="form-control" placeholder="Masukkan Nama" required>
-                    </div>
+                    <label>Tipe karyawan</label>
+                    <select name="tipe_kar" class="form-control">>
+
+                    <option value="Tetap" <?= ($value['tipe_kar'] == "Tetap" ? "selected" : ""); ?>>Tetap</option>
+                        <option value="Kontrak" <?= ($value['tipe_kar'] == "Kontrak" ? "selected" : ""); ?>>Kontrak</option>
+                        <option value="Freelance" <?= ($value['tipe_kar'] == "Freelance" ? "selected" : ""); ?>>Freelance</option>
+    </select>
+
+
+
+                </div>
                     <div class="form-group">
                         <label>Izin</label>
                         <input name="izin" value="<?= $value['izin']; ?>" class="form-control" placeholder="Masukkan Izin" required>
