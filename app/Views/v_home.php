@@ -74,7 +74,7 @@
             </div>
             <!-- /.col -->
             <div class="col-md-12 col-sm-12 col-xs-12">
-                <a href="" class="btn btn-primary btn-flat btn-block"><i class="fa fa-file"></i> Mendaftar</a>
+                <a href="<?= base_url('calkar/pendaftaran') ?>" class="btn btn-primary btn-flat btn-block"><i class="fa fa-file"></i> Mendaftar</a>
             </div>
             <!-- /.col -->
         </div>
