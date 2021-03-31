@@ -268,6 +268,11 @@
                             <i class="fa fa-user"></i> <span>User</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="<?= base_url('admin/setting') ?>">
+                            <i class="fa fa-gear"></i> <span>Setting</span>
+                        </a>
+                    </li>
                 </ul>
             </section>
             <!-- /.sidebar -->
@@ -276,83 +281,114 @@
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
-            <section class="content-header">
-                <h1>
-                    <?= $subtitle ?>
-                </h1>
-                <ol class="breadcrumb">
-                    <li><a href="<?= base_url('admin') ?>"><i class="fa fa-dashboard"></i> Home</a></li>
-                    <li class="active"><?= $subtitle ?></li>
-                </ol>
-            </section>
-
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 class="m-0">
+                                <?= $subtitle ?>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- Main content -->
-            <section class="content">
-                <?= $this->renderSection('content') ?>
-            </section>
-            <!-- jQuery 3 -->
-            <script src="<?= base_url() ?>/template/bower_components/jquery/dist/jquery.min.js"></script>
-            <!-- jQuery UI 1.11.4 -->
-            <script src="<?= base_url() ?>/template/bower_components/jquery-ui/jquery-ui.min.js"></script>
-            <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-            <script>
-                $.widget.bridge('uibutton', $.ui.button);
-            </script>
-            <!-- Bootstrap 3.3.7 -->
-            <script src="<?= base_url() ?>/template/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-            <!-- Morris.js charts -->
-            <script src="<?= base_url() ?>/template/bower_components/raphael/raphael.min.js"></script>
-            <script src="<?= base_url() ?>/template/bower_components/morris.js/morris.min.js"></script>
-            <!-- Sparkline -->
-            <script src="<?= base_url() ?>/template/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
-            <!-- jvectormap -->
-            <script src="<?= base_url() ?>/template/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-            <script src="<?= base_url() ?>/template/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-            <!-- jQuery Knob Chart -->
-            <script src="<?= base_url() ?>/template/bower_components/jquery-knob/dist/jquery.knob.min.js"></script>
-            <!-- daterangepicker -->
-            <script src="<?= base_url() ?>/template/bower_components/moment/min/moment.min.js"></script>
-            <script src="<?= base_url() ?>/template/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
-            <!-- datepicker -->
-            <script src="<?= base_url() ?>/template/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-            <!-- Bootstrap WYSIHTML5 -->
-            <script src="<?= base_url() ?>/template/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
-            <!-- Slimscroll -->
-            <script src="<?= base_url() ?>/template/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-            <!-- FastClick -->
-            <script src="<?= base_url() ?>/template/bower_components/fastclick/lib/fastclick.js"></script>
-            <!-- Calender -->
-            <script src="<?= base_url() ?>/template/bower_components/moment/moment.js"></script>
-            <script src="<?= base_url() ?>/template/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
-            <!-- DataTables -->
-            <script src="<?= base_url() ?>/template/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
-            <script src="<?= base_url() ?>/template/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-            <script src="<?= base_url() ?>/template/dist/js/adminlte.min.js"></script>
-            <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-            <script src="<?= base_url() ?>/template/dist/js/pages/dashboard.js"></script>
-            <!-- AdminLTE for demo purposes -->
-            <script src="<?= base_url() ?>/template/dist/js/demo.js"></script>
-            <script>
-                $(function() {
-                    $('#example1').DataTable()
-                    $('#example2').DataTable({
-                        'paging': true,
-                        'lengthChange': false,
-                        'searching': false,
-                        'ordering': true,
-                        'info': true,
-                        'autoWidth': false
-                    })
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <?= $this->renderSection('content') ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+                <b>Version</b> 2.4.18
+            </div>
+            <strong>Copyright &copy; <a href="https://adminlte.io">GiNK Technology</a>.</strong> All rights
+            reserved.
+            <!-- /.container -->
+        </footer>
+        <!-- jQuery 3 -->
+        <script src="<?= base_url() ?>/template/bower_components/jquery/dist/jquery.min.js"></script>
+        <!-- jQuery UI 1.11.4 -->
+        <script src="<?= base_url() ?>/template/bower_components/jquery-ui/jquery-ui.min.js"></script>
+        <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+        <script>
+            $.widget.bridge('uibutton', $.ui.button);
+        </script>
+        <!-- Bootstrap 3.3.7 -->
+        <script src="<?= base_url() ?>/template/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- Morris.js charts -->
+        <script src="<?= base_url() ?>/template/bower_components/raphael/raphael.min.js"></script>
+        <script src="<?= base_url() ?>/template/bower_components/morris.js/morris.min.js"></script>
+        <!-- Sparkline -->
+        <script src="<?= base_url() ?>/template/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+        <!-- jvectormap -->
+        <script src="<?= base_url() ?>/template/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+        <script src="<?= base_url() ?>/template/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+        <!-- jQuery Knob Chart -->
+        <script src="<?= base_url() ?>/template/bower_components/jquery-knob/dist/jquery.knob.min.js"></script>
+        <!-- daterangepicker -->
+        <script src="<?= base_url() ?>/template/bower_components/moment/min/moment.min.js"></script>
+        <script src="<?= base_url() ?>/template/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+        <!-- datepicker -->
+        <script src="<?= base_url() ?>/template/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+        <!-- Bootstrap WYSIHTML5 -->
+        <script src="<?= base_url() ?>/template/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+        <!-- Slimscroll -->
+        <script src="<?= base_url() ?>/template/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="<?= base_url() ?>/template/bower_components/fastclick/lib/fastclick.js"></script>
+        <!-- Calender -->
+        <script src="<?= base_url() ?>/template/bower_components/moment/moment.js"></script>
+        <script src="<?= base_url() ?>/template/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+        <!-- DataTables -->
+        <script src="<?= base_url() ?>/template/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="<?= base_url() ?>/template/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="<?= base_url() ?>/template/dist/js/adminlte.min.js"></script>
+        <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+        <script src="<?= base_url() ?>/template/dist/js/pages/dashboard.js"></script>
+        <!-- AdminLTE for demo purposes -->
+        <script src="<?= base_url() ?>/template/dist/js/demo.js"></script>
+        <script>
+            $(function() {
+                $('#example1').DataTable()
+                $('#example2').DataTable({
+                    'paging': true,
+                    'lengthChange': false,
+                    'searching': false,
+                    'ordering': true,
+                    'info': true,
+                    'autoWidth': false
                 })
-            </script>
-            <script>
-                window.setTimeout(function() {
-                    $('.alert').fadeTo(500, 0).slideUp(500, function() {
-                        $(this).remove();
-                    });
-                }, 3000);
-            </script>
-            <!-- Page specific script -->
+            })
+        </script>
+        <script>
+            window.setTimeout(function() {
+                $('.alert').fadeTo(500, 0).slideUp(500, function() {
+                    $(this).remove();
+                });
+            }, 3000);
+        </script>
+        <script>
+            function bacaGambar(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+                    reader.onload = function(e) {
+                        $('#gambar_load').attr('src', e.target.result)
+                    }
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+
+            $('#preview_gambar').change(function() {
+                bacaGambar(this);
+            });
+        </script>
+        <!-- Page specific script -->
 </body>
 
 </html>

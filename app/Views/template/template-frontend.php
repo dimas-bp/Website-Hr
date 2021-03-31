@@ -1,3 +1,12 @@
+<?php
+
+$db = \Config\Database::connect();
+
+$setting = $db->table('tb_setting')
+    ->where('id', '1')
+    ->get()->getRowArray();
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -38,7 +47,9 @@
             <nav class="navbar navbar-static-top">
                 <div class="container">
                     <div class="navbar-header">
-                        <a href="<?= base_url() ?>" class="navbar-brand"><b>Gink</b>Technology</a>
+                        <a href="<?= base_url() ?>" class="navbar-brand">
+                            <span class="brand-text font-weight-light"><b>HR</b> <?= $setting['nama_perusahaan'] ?></span>
+                        </a>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
                             <i class="fa fa-bars"></i>
                         </button>
@@ -49,7 +60,8 @@
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="<?= base_url() ?>">Home <span class="sr-only">(current)</span></a></li>
                             <li><a href="#">Kontak</a></li>
-                            <li><a href="#">Profil</a></li>
+                            <li><a href="#">Pendaftaran</a></li>
+                            <li><a href="#">Pengumuman</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
@@ -62,7 +74,7 @@
                                 <a class="nav-link" href="<?= base_url('login') ?>">
                                     <!-- The user image in the navbar-->
                                     <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                                    <i class="fa fa-user"></i>Login/Register
+                                    <i class="fa fa-user"></i>Login
                                 </a>
                             </li>
                         </ul>
@@ -74,6 +86,13 @@
         </header>
         <!-- Full Width Column -->
         <div class="content-wrapper">
+            <div class="content-header">
+                <div class="container">
+                    <h1>
+                        Lowongan Pekerjaan
+                    </h1>
+                </div>
+            </div>
             <div class="container">
                 <!-- Content Header (Page header) -->
                 <div class="content">
@@ -90,7 +109,7 @@
                 <div class="pull-right hidden-xs">
                     <b>Version</b> 2.4.18
                 </div>
-                <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE</a>.</strong> All rights
+                <strong>Copyright &copy; <?= date('Y') ?> <a href="<?= $setting['web'] ?>"><?= $setting['nama_perusahaan'] ?></a>.</strong> All rights
                 reserved.
             </div>
             <!-- /.container -->
