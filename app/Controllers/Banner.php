@@ -9,7 +9,7 @@ class Banner extends BaseController
 {
 	public function __construct()
 	{
-		$this->ModalBanner = new ModalBanner();
+		$this->ModelBanner = new ModelBanner();
 		helper('form');
 	}
 
@@ -17,7 +17,7 @@ class Banner extends BaseController
 	{
 		$data = [
 			'title' => 'HR GiNK',
-			'hadir' => $this->ModalBanner->getAllData(),
+			'hadir' => $this->ModelBanner->getAllData(),
 			'subtitle' => 'Banner',
 		];
 		return view('admin/v_banner', $data);
@@ -33,7 +33,7 @@ class Banner extends BaseController
 			'alfa' => $this->request->getPost('alfa'),
 			'bulan' => $this->request->getPost('bulan')
 		);
-		$this->ModalBanner->add($data);
+		$this->ModelBanner->add($data);
 		session()->setFlashdata('pesan', 'Data Berhasil Di Tambahkan !!!');
 		return redirect()->to(base_url('hadir'));
 	}
@@ -49,7 +49,7 @@ class Banner extends BaseController
 			'alfa' => $this->request->getPost('alfa'),
 			'bulan' => $this->request->getPost('bulan'),
 		);
-		$this->ModalBanner->edit($data);
+		$this->ModelBanner->edit($data);
 		session()->setFlashdata('pesan', 'Data Berhasil Di Update !!!');
 		return redirect()->to(base_url('hadir'));
 	}
@@ -59,7 +59,7 @@ class Banner extends BaseController
 		$data = array(
 			'id_kehadiran' => $id_kehadiran,
 		);
-		$this->ModalBanner->delete_hadir($data);
+		$this->ModelBanner->delete_hadir($data);
 		session()->setFlashdata('delete', 'Data Berhasil Di Hapus !!!');
 		return redirect()->to(base_url('hadir'));
 	}

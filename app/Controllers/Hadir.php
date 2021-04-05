@@ -30,8 +30,7 @@ class Hadir extends BaseController
 			'tipe_kar' => $this->request->getPost('tipe_kar'),
 			'izin' => $this->request->getPost('izin'),
 			'cuti' => $this->request->getPost('cuti'),
-			'alfa' => $this->request->getPost('alfa'),
-			'bulan' => $this->request->getPost('bulan')
+			'alfa' => $this->request->getPost('alfa')
 		);
 		$this->ModelHadir->add($data);
 		session()->setFlashdata('pesan', 'Data Berhasil Di Tambahkan !!!');
@@ -46,8 +45,7 @@ class Hadir extends BaseController
 			'tipe_kar' => $this->request->getPost('tipe_kar'),
 			'izin' => $this->request->getPost('izin'),
 			'cuti' => $this->request->getPost('cuti'),
-			'alfa' => $this->request->getPost('alfa'),
-			'bulan' => $this->request->getPost('bulan'),
+			'alfa' => $this->request->getPost('alfa')
 		);
 		$this->ModelHadir->edit($data);
 		session()->setFlashdata('pesan', 'Data Berhasil Di Update !!!');

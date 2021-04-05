@@ -40,7 +40,6 @@
                             <th>Izin</th>
                             <th>Cuti</th>
                             <th>Alfa</th>
-                            <th>Bulan</th>
                             <th width="100px">Action</th>
                         </tr>
                     </thead>
@@ -54,7 +53,6 @@
                                 <td><?= $value['izin']; ?></td>
                                 <td><?= $value['cuti']; ?></td>
                                 <td><?= $value['alfa']; ?></td>
-                                <td><?= $value['bulan']; ?></td>
                                 <td>
                                     <button class="btn btn-sm btn-warning" data-toggle="modal" data-target="#edit<?= $value['id_kehadiran']; ?>"><i class="fa fa-pencil-square-o"></i></button>
                                     <button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete<?= $value['id_kehadiran']; ?>"><i class="fa fa-trash"></i></button>
@@ -91,8 +89,8 @@
                 <div class="form-group">
                     <label>Tipe karyawan</label>
                     <select name="tipe_kar" class="form-control">>
-                        <option value="" holder disabled selected class="btn btn-secondary disabled" >Pilih kategori</option>
-                        <option value="Tetap"  class="btn btn-primary">Tetap</option>
+                        <option value="" holder disabled selected class="btn btn-secondary disabled">Pilih kategori</option>
+                        <option value="Tetap" class="btn btn-primary">Tetap</option>
                         <option value="Kontrak" class="btn btn-primary">Kontrak</option>
                         <option value="Freelance" class="btn btn-primary">Freelance</option>
                     </select>
@@ -109,25 +107,6 @@
                 <div class="form-group">
                     <label>Alfa</label>
                     <input name="alfa" class="form-control" placeholder="Masukkan Alfa" required>
-                </div>
-                <div class="form-group">
-                    <label>Bulan</label>
-                    <select name="bulan" class="form-control">>
-                        <option value="" holder disabled selected class="btn btn-secondary disabled" >-- Bulan --</option>
-                        <option value="Januari"  class="btn btn-primary">Januari</option>
-                        <option value="Febuari" class="btn btn-primary">Febuari</option>
-                        <option value="Maret" class="btn btn-primary">Maret</option>
-                        <option value="April" class="btn btn-primary">April</option>
-                        <option value="Mei" class="btn btn-primary">Mei</option>
-                        <option value="Juni" class="btn btn-primary">Juni</option>
-                        <option value="July" class="btn btn-primary">July</option>
-                        <option value="Agustus" class="btn btn-primary">Agustus</option>
-                        <option value="September" class="btn btn-primary">September</option>
-                        <option value="Oktober" class="btn btn-primary">Oktober</option>
-                        <option value="November" class="btn btn-primary">November</option>
-                        <option value="Desember" class="btn btn-primary">Desember</option>
-                    </select>
-                    <!-- <input name="tipe_kar" class="form-control" placeholder="Masukkan Tipe" required> -->
                 </div>
             </div>
             <div class="modal-footer">
@@ -163,17 +142,17 @@
 
 
                     <div class="form-group">
-                    <label>Tipe karyawan</label>
-                    <select name="tipe_kar" class="form-control">>
+                        <label>Tipe karyawan</label>
+                        <select name="tipe_kar" class="form-control">>
 
-                    <option value="Tetap" <?= ($value['tipe_kar'] == "Tetap" ? "selected" : ""); ?>>Tetap</option>
-                        <option value="Kontrak" <?= ($value['tipe_kar'] == "Kontrak" ? "selected" : ""); ?>>Kontrak</option>
-                        <option value="Freelance" <?= ($value['tipe_kar'] == "Freelance" ? "selected" : ""); ?>>Freelance</option>
-    </select>
+                            <option value="Tetap" <?= ($value['tipe_kar'] == "Tetap" ? "selected" : ""); ?>>Tetap</option>
+                            <option value="Kontrak" <?= ($value['tipe_kar'] == "Kontrak" ? "selected" : ""); ?>>Kontrak</option>
+                            <option value="Freelance" <?= ($value['tipe_kar'] == "Freelance" ? "selected" : ""); ?>>Freelance</option>
+                        </select>
 
 
 
-                </div>
+                    </div>
                     <div class="form-group">
                         <label>Izin</label>
                         <input name="izin" value="<?= $value['izin']; ?>" class="form-control" placeholder="Masukkan Izin" required>
