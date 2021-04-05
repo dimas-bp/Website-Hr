@@ -16,4 +16,14 @@ class ModelAuth extends Model
 			]
 		)->get()->getRowArray();
 	}
+
+	public function login_calkar($email, $password)
+	{
+		return $this->db->table('tb_calkar')->where(
+			[
+				'email' => $email,
+				'password' => $password
+			]
+		)->get()->getRowArray();
+	}
 }

@@ -20,6 +20,7 @@ class Filters extends BaseConfig
 		'toolbar'  => DebugToolbar::class,
 		'honeypot' => Honeypot::class,
 		'filteruser' => \App\Filters\FilterUser::class,
+		'filtercalkar' => \App\Filters\FilterCalkar::class,
 	];
 
 	/**
@@ -34,8 +35,16 @@ class Filters extends BaseConfig
 				'except' => [
 					'auth', 'auth/*',
 					'home', 'home/*',
-					'calkar', 'calkar/*',
-					'/'
+					'/',
+					'pendaftaran', 'pendaftaran/*'
+				]
+			],
+			'filtercalkar' => [
+				'except' => [
+					'auth', 'auth/*',
+					'home', 'home/*',
+					'/',
+					'pendaftaran', 'pendaftaran/*',
 				]
 			]
 			// 'honeypot',
@@ -46,10 +55,22 @@ class Filters extends BaseConfig
 				'except' => [
 					'home', 'home/*',
 					'/',
+					'calkar', 'calkar/*',
+					'pendaftaran', 'pendaftaran/*',
 					'admin', 'admin/*',
 					'tipe', 'tipe/*',
 					'hadir', 'hadir/*',
+					'jadwal', 'jadwal/*',
 					'user', 'user/*',
+					'banner', 'banner/*'
+				]
+			],
+			'filtercalkar' => [
+				'except' => [
+					'home', 'home/*',
+					'/',
+					'pendaftaran', 'pendaftaran/*',
+					'calkar', 'calkar/*',
 				]
 			],
 			'toolbar',

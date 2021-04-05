@@ -255,12 +255,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="pages/calendar.html">
+                        <a href="<?= base_url('jadwal') ?>">
                             <i class="fa fa-calendar"></i> <span>Jadwal</span>
-                            <span class="pull-right-container">
-                                <small class="label pull-right bg-red">3</small>
-                                <small class="label pull-right bg-blue">17</small>
-                            </span>
                         </a>
                     </li>
                     <li>
@@ -268,10 +264,18 @@
                             <i class="fa fa-user"></i> <span>User</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="<?= base_url('admin/setting') ?>">
-                            <i class="fa fa-gear"></i> <span>Setting</span>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-gears"></i>
+                            <span>Setting</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
                         </a>
+                        <ul class="treeview-menu">
+                            <li><a href="<?= base_url('admin/setting') ?>"><i class="fa fa-gear"></i> <span> Setting Web</span></a></li>
+                            <li><a href="<?= base_url('banner') ?>"><i class="fa fa-file-image-o"></i> Setting Banner</a></li>
+                        </ul>
                     </li>
                 </ul>
             </section>

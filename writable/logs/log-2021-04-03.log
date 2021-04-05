@@ -1,0 +1,31 @@
+CRITICAL - 2021-04-03 01:13:44 --> Call to undefined function display_error()
+#0 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include()
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('v_pendaftaran', Array, true)
+#3 C:\xampp\htdocs\Web-Hr\app\Controllers\Calkar.php(26): view('v_pendaftaran', Array)
+#4 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Calkar->pendaftaran()
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calkar))
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-04-03 02:18:36 --> Invalid file: v_login_calkar.php
+#0 C:\xampp\htdocs\Web-Hr\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_login_calkar....')
+#1 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('v_login_calkar', Array, true)
+#2 C:\xampp\htdocs\Web-Hr\app\Controllers\Calkar.php(89): view('v_login_calkar', Array)
+#3 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Calkar->loginCalkar()
+#4 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calkar))
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-04-03 02:18:53 --> Invalid file: v_login_calkar.php
+#0 C:\xampp\htdocs\Web-Hr\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_login_calkar....')
+#1 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('v_login_calkar', Array, true)
+#2 C:\xampp\htdocs\Web-Hr\app\Controllers\Calkar.php(89): view('v_login_calkar', Array)
+#3 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Calkar->loginCalkar()
+#4 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calkar))
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}

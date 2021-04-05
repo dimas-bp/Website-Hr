@@ -1,0 +1,8 @@
+CRITICAL - 2021-04-05 00:54:17 --> Undefined index: foto
+#0 C:\xampp\htdocs\Web-Hr\app\Controllers\Auth.php(112): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 112, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Auth->cek_login_calkar()
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}

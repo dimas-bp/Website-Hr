@@ -40,6 +40,7 @@
                             <th>Izin</th>
                             <th>Cuti</th>
                             <th>Alfa</th>
+                            <th>Bulan</th>
                             <th width="100px">Action</th>
                         </tr>
                     </thead>
@@ -53,6 +54,7 @@
                                 <td><?= $value['izin']; ?></td>
                                 <td><?= $value['cuti']; ?></td>
                                 <td><?= $value['alfa']; ?></td>
+                                <td><?= $value['bulan']; ?></td>
                                 <td>
                                     <button class="btn btn-sm btn-warning" data-toggle="modal" data-target="#edit<?= $value['id_kehadiran']; ?>"><i class="fa fa-pencil-square-o"></i></button>
                                     <button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete<?= $value['id_kehadiran']; ?>"><i class="fa fa-trash"></i></button>
@@ -101,6 +103,16 @@
                 <div class="form-group">
                     <label>Alfa</label>
                     <input name="alfa" class="form-control" placeholder="Masukkan Alfa" required>
+                </div>
+                <div class="form-group">
+                    <label>Bulan</label>
+                    <select name="bulan" class="form-control">
+                        <option value="">-- Bulan --</option>
+                        <?php
+                        for ($i = 1; $i <= 12; $i++) { ?>
+                            <option value="<?= $i ?>"><?= $i ?></option>;
+                        <?php } ?>
+                    </select>
                 </div>
             </div>
             <div class="modal-footer">

@@ -5,6 +5,10 @@ $db = \Config\Database::connect();
 $setting = $db->table('tb_setting')
     ->where('id', '1')
     ->get()->getRowArray();
+
+$jadwal = $db->table('tb_lowongan')
+    ->where('status', '1')
+    ->get()->getRowArray();
 ?>
 
 <!DOCTYPE html>
@@ -60,7 +64,6 @@ $setting = $db->table('tb_setting')
                         <ul class="nav navbar-nav">
                             <li><a href="<?= base_url() ?>">Home <span class="sr-only">(current)</span></a></li>
                             <li><a href="#">Kontak</a></li>
-                            <li><a href="<?= base_url('calkar/pendaftaran') ?>">Pendaftaran</a></li>
                             <li><a href="#">Pengumuman</a></li>
                         </ul>
                     </div>
@@ -70,13 +73,26 @@ $setting = $db->table('tb_setting')
                         <ul class="nav navbar-nav">
                             <!-- User Account Menu -->
                             <li class="dropdown user user-menu">
-                                <!-- Menu Toggle Button -->
-                                <a class="nav-link" href="<?= base_url('login') ?>">
-                                    <!-- The user image in the navbar-->
-                                    <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                                    <i class="fa fa-user"></i>Login
+                                <?php if (session()->get('email') == "") { ?>
+                                    <a class="nav-link" href="<?= base_url('auth/loginCalkar') ?>">
+                                        <i class="fa fa-user"></i>Login
+                                    </a>
+                                <?php } else { ?>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-user"></i> <?= session()->get('nama_lengkap') ?> <span class="caret"></span>
                                 </a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="<?= base_url('Auth/logout_calkar') ?>"><i class="fa fa-sign-out"></i> Logout</a></li>
+                                </ul>
                             </li>
+                        <?php } ?>
+                        <!-- Menu Toggle Button -->
+
+                        <!-- The user image in the navbar-->
+                        <!-- hidden-xs hides the username on small devices so only the image appears. -->
+
+                        </li>
                         </ul>
                     </div>
                     <!-- /.navbar-custom-menu -->
@@ -88,9 +104,14 @@ $setting = $db->table('tb_setting')
         <div class="content-wrapper">
             <div class="content-header">
                 <div class="container">
-                    <h1>
-                        Lowongan Pekerjaan
-                    </h1>
+                    <div class="col-sm-6">
+                        <?php if ($jadwal['status'] <> 1) { ?>
+                            <h1 class="text-danger"><b>Pendaftaran Sudah Tutup !!!</b>
+                                <h1>
+                                <?php } else { ?>
+                                    <h1>Lowongan Pekerjaan <?= $jadwal['lowongan'] ?><h1>
+                                        <?php } ?>
+                    </div>
                 </div>
             </div>
             <div class="container">

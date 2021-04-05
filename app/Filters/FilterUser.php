@@ -26,8 +26,7 @@ class FilterUser implements FilterInterface
 	public function before(RequestInterface $request, $arguments = null)
 	{
 		if (session()->get('level') == '') {
-			session()->setFlashdata('pesan', 'Anda Belum Login !!!');
-			return redirect()->to(base_url('auth/login'));
+			return redirect()->to('/');
 		}
 	}
 
