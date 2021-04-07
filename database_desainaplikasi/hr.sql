@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 05, 2021 at 11:45 AM
+-- Generation Time: Apr 07, 2021 at 09:57 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -24,24 +24,45 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_banner`
+-- Table structure for table `tb_baner`
 --
 
-CREATE TABLE `tb_banner` (
-  `id_banner` int(11) NOT NULL,
+CREATE TABLE `tb_baner` (
+  `id_baner` int(11) NOT NULL,
   `ket` varchar(255) DEFAULT NULL,
-  `banner` varchar(255) DEFAULT NULL
+  `baner` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tb_banner`
+-- Dumping data for table `tb_baner`
 --
 
-INSERT INTO `tb_banner` (`id_banner`, `ket`, `banner`) VALUES
-(1, 'Banner 1', 'banner1.png'),
-(2, 'Banner 2', 'banner2.png'),
-(3, 'Banner 3', 'banner3.png'),
-(4, 'Banner 4', 'banner4.png');
+INSERT INTO `tb_baner` (`id_baner`, `ket`, `baner`) VALUES
+(1, 'Baner 1', 'baner1.jpg'),
+(2, 'Baner 2', 'baner2.png'),
+(3, 'Baner 3', 'baner3.png'),
+(4, 'Baner 4', 'baner4.png');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_berkas`
+--
+
+CREATE TABLE `tb_berkas` (
+  `id_berkas` int(11) NOT NULL,
+  `id_calkar` int(11) DEFAULT NULL,
+  `id_lampiran` int(2) DEFAULT NULL,
+  `ket` varchar(255) DEFAULT NULL,
+  `berkas` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tb_berkas`
+--
+
+INSERT INTO `tb_berkas` (`id_berkas`, `id_calkar`, `id_lampiran`, `ket`, `berkas`) VALUES
+(1, 2, 1, 'Curiculum Vitae', 'cv_Irham.pdf');
 
 -- --------------------------------------------------------
 
@@ -53,17 +74,24 @@ CREATE TABLE `tb_calkar` (
   `id_calkar` int(11) NOT NULL,
   `email` varchar(255) NOT NULL,
   `nama_lengkap` varchar(255) NOT NULL,
-  `nama_panggilan` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL
+  `nama_panggilan` varchar(255) DEFAULT NULL,
+  `password` varchar(255) NOT NULL,
+  `foto` varchar(255) DEFAULT NULL,
+  `tempat_lahir` varchar(255) DEFAULT NULL,
+  `tgl_lahir` date DEFAULT NULL,
+  `alamat` varchar(255) DEFAULT NULL,
+  `agama` varchar(255) DEFAULT NULL,
+  `no_telpon` varchar(15) DEFAULT NULL,
+  `jk` varchar(1) DEFAULT NULL,
+  `stat_pendaftaran` int(1) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `tb_calkar`
 --
 
-INSERT INTO `tb_calkar` (`id_calkar`, `email`, `nama_lengkap`, `nama_panggilan`, `password`) VALUES
-(2, 'dimasbudipratama0@gmail.com', 'dimas budi', 'dimas', '12345'),
-(3, 'dimasbudipratama007@gmail.com', 'dimas budi', 'dimas', '12345');
+INSERT INTO `tb_calkar` (`id_calkar`, `email`, `nama_lengkap`, `nama_panggilan`, `password`, `foto`, `tempat_lahir`, `tgl_lahir`, `alamat`, `agama`, `no_telpon`, `jk`, `stat_pendaftaran`) VALUES
+(2, 'dimasbudipratama0@gmail.com', 'dimas budi', 'dimas', '12345', '1617727067_3c63daaa054b4401f8bb.jpg', 'Bandar Lampung', '2021-04-14', NULL, 'Islam', '082279137077', 'L', 1);
 
 -- --------------------------------------------------------
 
@@ -116,7 +144,27 @@ CREATE TABLE `tb_kehadiran` (
 --
 
 INSERT INTO `tb_kehadiran` (`id_kehadiran`, `nm_kehadiran`, `tipe_kar`, `izin`, `cuti`, `alfa`) VALUES
-(1, 'Dimas', 'Tetap', 2, 2, 2);
+(6, 'Dimas', 'Tetap', 2, 2, 2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_lampiran`
+--
+
+CREATE TABLE `tb_lampiran` (
+  `id_lampiran` int(2) NOT NULL,
+  `lampiran` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tb_lampiran`
+--
+
+INSERT INTO `tb_lampiran` (`id_lampiran`, `lampiran`) VALUES
+(1, 'CV'),
+(3, 'Piagam'),
+(4, 'Sertifikat');
 
 -- --------------------------------------------------------
 
@@ -209,10 +257,16 @@ INSERT INTO `tb_user` (`id_user`, `nama_user`, `email`, `password`, `foto`) VALU
 --
 
 --
--- Indexes for table `tb_banner`
+-- Indexes for table `tb_baner`
 --
-ALTER TABLE `tb_banner`
-  ADD PRIMARY KEY (`id_banner`);
+ALTER TABLE `tb_baner`
+  ADD PRIMARY KEY (`id_baner`);
+
+--
+-- Indexes for table `tb_berkas`
+--
+ALTER TABLE `tb_berkas`
+  ADD PRIMARY KEY (`id_berkas`);
 
 --
 -- Indexes for table `tb_calkar`
@@ -238,6 +292,12 @@ ALTER TABLE `tb_karyawan`
 --
 ALTER TABLE `tb_kehadiran`
   ADD PRIMARY KEY (`id_kehadiran`);
+
+--
+-- Indexes for table `tb_lampiran`
+--
+ALTER TABLE `tb_lampiran`
+  ADD PRIMARY KEY (`id_lampiran`);
 
 --
 -- Indexes for table `tb_lowongan`
@@ -269,10 +329,16 @@ ALTER TABLE `tb_user`
 --
 
 --
--- AUTO_INCREMENT for table `tb_banner`
+-- AUTO_INCREMENT for table `tb_baner`
 --
-ALTER TABLE `tb_banner`
-  MODIFY `id_banner` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+ALTER TABLE `tb_baner`
+  MODIFY `id_baner` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `tb_berkas`
+--
+ALTER TABLE `tb_berkas`
+  MODIFY `id_berkas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tb_calkar`
@@ -296,7 +362,13 @@ ALTER TABLE `tb_karyawan`
 -- AUTO_INCREMENT for table `tb_kehadiran`
 --
 ALTER TABLE `tb_kehadiran`
-  MODIFY `id_kehadiran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_kehadiran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `tb_lampiran`
+--
+ALTER TABLE `tb_lampiran`
+  MODIFY `id_lampiran` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `tb_lowongan`
