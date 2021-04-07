@@ -45,13 +45,6 @@ class Pendaftaran extends BaseController
 					'required' => '{field} Wajib Diisi !!'
 				]
 			],
-			'nama_panggilan' => [
-				'label' => 'Nama Panggilan',
-				'rules' => 'required',
-				'errors' => [
-					'required' => '{field} Wajib Diisi !!'
-				]
-			],
 			'password' => [
 				'label' => 'Password',
 				'rules' => 'required|min_length[5]',
@@ -65,7 +58,6 @@ class Pendaftaran extends BaseController
 			$data = [
 				'email' => $this->request->getPost('email'),
 				'nama_lengkap' => $this->request->getPost('nama_lengkap'),
-				'nama_panggilan' => $this->request->getPost('nama_panggilan'),
 				'password' => $this->request->getPost('password'),
 			];
 			$this->ModelCalkar->add($data);

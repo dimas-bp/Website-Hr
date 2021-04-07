@@ -79,6 +79,10 @@ class User extends BaseController
 
 	public function delete_user($id_user)
 	{
+		$user = $this->ModelUser->detailData($id_user);
+		if ($user['foto'] != "") {
+			unlink('./foto/' . $user['foto']);
+		}
 		$data = array(
 			'id_user' => $id_user,
 		);

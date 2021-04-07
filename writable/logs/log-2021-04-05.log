@@ -6,3 +6,61 @@ CRITICAL - 2021-04-05 00:54:17 --> Undefined index: foto
 #4 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
 #5 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
 #6 {main}
+CRITICAL - 2021-04-05 09:52:23 --> Undefined variable: hadir
+#0 C:\xampp\htdocs\Web-Hr\app\Views\admin\v_baner.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 45, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('admin/v_baner', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Baner.php(22): view('admin/v_baner', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Baner->index()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Baner))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-05 09:52:36 --> Undefined variable: baner
+#0 C:\xampp\htdocs\Web-Hr\app\Views\admin\v_baner.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 45, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('admin/v_baner', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Baner.php(22): view('admin/v_baner', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Baner->index()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Baner))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-05 09:52:39 --> Undefined variable: baner
+#0 C:\xampp\htdocs\Web-Hr\app\Views\admin\v_baner.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 45, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('admin/v_baner', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Baner.php(22): view('admin/v_baner', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Baner->index()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Baner))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-05 09:57:23 --> Undefined variable: base_url
+#0 C:\xampp\htdocs\Web-Hr\app\Views\admin\v_baner.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 49, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('admin/v_baner', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Baner.php(23): view('admin/v_baner', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Baner->index()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Baner))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-05 10:39:27 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Web-Hr\system\Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Web-Hr\system\Model.php(834): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Web-Hr\app\Controllers\Baner.php(52): CodeIgniter\Model->__call('detailBaner', Array)
+#3 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Baner->delete_baner('6')
+#4 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Baner))
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}

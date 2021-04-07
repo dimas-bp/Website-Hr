@@ -53,6 +53,7 @@ class Filters extends BaseConfig
 		'after'  => [
 			'filteruser' => [
 				'except' => [
+					'auth', 'auth/*',
 					'home', 'home/*',
 					'/',
 					'calkar', 'calkar/*',
@@ -62,11 +63,14 @@ class Filters extends BaseConfig
 					'hadir', 'hadir/*',
 					'jadwal', 'jadwal/*',
 					'user', 'user/*',
-					'banner', 'banner/*'
+					'baner', 'baner/*',
+					'lampiran', 'lampiran/*',
+					'daftar', 'daftar/*'
 				]
 			],
 			'filtercalkar' => [
 				'except' => [
+					'auth', 'auth/*',
 					'home', 'home/*',
 					'/',
 					'pendaftaran', 'pendaftaran/*',

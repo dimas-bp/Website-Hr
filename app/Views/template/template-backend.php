@@ -250,8 +250,10 @@
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> Tambah Data</a></li>
-                            <li><a href="<?= base_url('calkar') ?>"><i class="fa fa-circle-o"></i> Data Calon Karyawan</a></li>
+                            <li><a href="<?= base_url('lampiran') ?>"><i class="fa fa-file"></i> Lampiran</a></li>
+                            <li><a href="<?= base_url('daftar') ?>"><i class="fa fa-download"></i> Masuk</a></li>
+                            <li><a href=""><i class="fa fa-check-square"></i> Diterima</a></li>
+                            <li><a href=""><i class="fa fa-times-circle"></i> Ditolak</a></li>
                         </ul>
                     </li>
                     <li>
@@ -267,14 +269,14 @@
                     <li class="treeview">
                         <a href="#">
                             <i class="fa fa-gears"></i>
-                            <span>Setting</span>
+                            <span>Setup</span>
                             <span class="pull-right-container">
                                 <i class="fa fa-angle-left pull-right"></i>
                             </span>
                         </a>
                         <ul class="treeview-menu">
                             <li><a href="<?= base_url('admin/setting') ?>"><i class="fa fa-gear"></i> <span> Setting Web</span></a></li>
-                            <li><a href="<?= base_url('banner') ?>"><i class="fa fa-file-image-o"></i> Setting Banner</a></li>
+                            <li><a href="<?= base_url('Baner') ?>"><i class="fa fa-file-image-o"></i> Setting Banner</a></li>
                         </ul>
                     </li>
                 </ul>

@@ -4,20 +4,22 @@
 <div class="col-sm-8">
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+            <?php $no_a = 1;
+            foreach ($baner as $key => $value) {
+                $a = $no_a;
+            ?>
+                <li data-target="#carousel-example-generic" data-slide-to="<?= $no_a++ ?>" class="<?= ($no_a == 1) ? 'active' : '' ?>"></li>
+            <?php } ?>
         </ol>
         <div class="carousel-inner">
-            <div class="item active">
-                <img class="d-block w-100" height="100px" src="<?= base_url('gambar/foto1.jpg') ?>" alt="First slide">
-            </div>
-            <div class="item">
-                <img class="d-block w-100" height="100px" src="<?= base_url('gambar/foto2.png') ?>" alt="Second slide">
-            </div>
-            <div class="item">
-                <img class="d-block w-100" height="100px" src="<?= base_url('gambar/foto3.png') ?>" alt="Third slide">
-            </div>
+            <?php $no_b = 1;
+            foreach ($baner as $key => $value) {
+                $b = $no_b;
+            ?>
+                <div class="item <?= ($b == 1) ? 'active' : '' ?>">
+                    <img class="d-block w-100" height="100px" src="<?= base_url('assets/' . $value['baner']) ?>" alt="<?= $no_b++ ?>">
+                </div>
+            <?php } ?>
         </div>
         <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
             <span class="fa fa-angle-left"></span>
@@ -81,22 +83,6 @@
     </div>
 </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <?= $this->endSection() ?>

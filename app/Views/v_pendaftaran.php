@@ -32,18 +32,11 @@
                             <p class="text-danger"><?= $validation->hasError('email') ? $validation->getError('email') : '' ?></p>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-12">
                         <div class="form-group">
                             <label>Nama Lengkap</label>
                             <input name="nama_lengkap" type="text" value="<?= old('nama_lengkap') ?>" class="form-control" placeholder="Nama Lengkap">
                             <p class="text-danger"><?= $validation->hasError('nama_lengkap') ? $validation->getError('nama_lengkap') : '' ?></p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label>Nama Panggilan</label>
-                            <input name="nama_panggilan" type="text" value="<?= old('nama_panggilan') ?>" class="form-control" placeholder="Nama Panggilan">
-                            <p class="text-danger"><?= $validation->hasError('nama_panggilan') ? $validation->getError('nama_panggilan') : '' ?></p>
                         </div>
                     </div>
                     <div class="col-sm-12">
