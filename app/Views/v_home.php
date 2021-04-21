@@ -36,43 +36,14 @@
             <h3 class="box-title">Estimasi Pendaftaran</h3>
         </div>
         <div class="box-body">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="info-box">
-                    <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
-
-                    <div class="info-box-content">
-                        <span class="info-box-text">Jumlah Pendaftar</span>
-                        <span class="info-box-number">100</span>
-                    </div>
-                    <!-- /.info-box-content -->
-                </div>
-                <!-- /.info-box -->
+            <div class="section-title-container">
+                <h4 class="section-title" style="font-weight:bold; text-transform:none;"><span>GiNK</span> TECHNOLOGY</h4>
             </div>
-            <!-- /.col -->
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="info-box">
-                    <span class="info-box-icon bg-green"><i class="fa fa-flag-o"></i></span>
-
-                    <div class="info-box-content">
-                        <span class="info-box-text">Bookmarks</span>
-                        <span class="info-box-number">410</span>
-                    </div>
-                    <!-- /.info-box-content -->
-                </div>
-                <!-- /.info-box -->
-            </div>
-            <!-- /.col -->
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="info-box">
-                    <span class="info-box-icon bg-yellow"><i class="fa fa-files-o"></i></span>
-
-                    <div class="info-box-content">
-                        <span class="info-box-text">Uploads</span>
-                        <span class="info-box-number">13,648</span>
-                    </div>
-                    <!-- /.info-box-content -->
-                </div>
-                <!-- /.info-box -->
+            <div class="contact-info">
+                <h3>GINK TECHNOLOGY</h3>
+                <p>Jl. WAY PENGUBUAN NO.16 BANDAR LAMPUNG</p>
+                <p><strong>T. </strong>0721 5600 649 | <strong>P. </strong>0811 7208 887</p>
+                <p>www.ginktech.net | info@ginktech.net</p>
             </div>
             <!-- /.col -->
             <div class="col-md-12 col-sm-12 col-xs-12">
@@ -82,7 +53,19 @@
         </div>
     </div>
 </div>
-</div>
 
+<div class="col-sm-12">
+    <div class="box box-primary">
+        <div class="box-header with-border">
+            <h3 class="box-title"><b>Full Stack Web Developer</b></h3>
+            <!-- /.box-tools -->
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            <?= $beranda['beranda'] ?>
+        </div>
+        <!-- /.box-body -->
+    </div>
+</div>
 
 <?= $this->endSection() ?>

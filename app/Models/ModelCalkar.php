@@ -22,9 +22,24 @@ class ModelCalkar extends Model
 			->getRowArray();
 	}
 
+	public function get_rating_data()
+	{
+		return $this->db->table('tb_calkar')
+			->join('tb_rating', 'tb_rating.id_rating = tb_calkar.id_rating', 'left')
+			->where('id_calkar', session()->get('id_calkar'))
+			->get()
+			->getRowArray();
+	}
+
 	public function getFormulir()
 	{
 		return $this->db->table('tb_calkar')
+			->join('tbl_provinsi', 'tbl_provinsi.id_provinsi = tb_calkar.id_provinsi', 'left')
+			->join('tbl_kabupaten', 'tbl_kabupaten.id_kabupaten = tb_calkar.id_kabupaten', 'left')
+			->join('tbl_kecamatan', 'tbl_kecamatan.id_kecamatan = tb_calkar.id_kecamatan', 'left')
+			->join('tb_spesialisasi', 'tb_spesialisasi.id_spesialisasi = tb_calkar.id_spesialisasi', 'left')
+			->join('tb_bidang', 'tb_bidang.id_bidang = tb_calkar.id_bidang', 'left')
+			->join('tb_rating', 'tb_rating.id_rating = tb_calkar.id_rating', 'left')
 			->where('id_calkar', session()->get('id_calkar'))
 			->get()
 			->getRowArray();

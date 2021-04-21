@@ -1,0 +1,787 @@
+CRITICAL - 2021-04-20 00:13:57 --> Argument 2 passed to form_input() must be of the type string, null given, called in C:\xampp\htdocs\Web-Hr\system\Helpers\form_helper.php on line 161
+#0 C:\xampp\htdocs\Web-Hr\system\Helpers\form_helper.php(161): form_input('id_calkar', NULL, '', 'hidden')
+#1 C:\xampp\htdocs\Web-Hr\system\Helpers\form_helper.php(153): form_hidden('id_calkar', NULL, true)
+#2 C:\xampp\htdocs\Web-Hr\app\Views\admin\daftar\v_masuk.php(106): form_hidden(Array)
+#3 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('admin/daftar/v_...', Array, true)
+#6 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(29): view('admin/daftar/v_...', Array)
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->index()
+#8 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#9 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2021-04-20 00:14:17 --> Argument 2 passed to form_input() must be of the type string, null given, called in C:\xampp\htdocs\Web-Hr\system\Helpers\form_helper.php on line 161
+#0 C:\xampp\htdocs\Web-Hr\system\Helpers\form_helper.php(161): form_input('id_calkar', NULL, '', 'hidden')
+#1 C:\xampp\htdocs\Web-Hr\system\Helpers\form_helper.php(153): form_hidden('id_calkar', NULL, true)
+#2 C:\xampp\htdocs\Web-Hr\app\Views\admin\daftar\v_masuk.php(106): form_hidden(Array)
+#3 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('admin/daftar/v_...', Array, true)
+#6 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(29): view('admin/daftar/v_...', Array)
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->index()
+#8 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#9 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2021-04-20 00:14:53 --> Trying to get property 'id' of non-object
+#0 C:\xampp\htdocs\Web-Hr\app\Views\admin\daftar\v_masuk.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 3, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('admin/daftar/v_...', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(29): view('admin/daftar/v_...', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->index()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-20 00:15:59 --> Undefined variable: id
+#0 C:\xampp\htdocs\Web-Hr\app\Views\admin\daftar\v_masuk.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 3, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('admin/daftar/v_...', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(29): view('admin/daftar/v_...', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->index()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-20 00:16:01 --> Undefined variable: id
+#0 C:\xampp\htdocs\Web-Hr\app\Views\admin\daftar\v_masuk.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 3, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('admin/daftar/v_...', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(29): view('admin/daftar/v_...', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->index()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-20 00:16:02 --> Undefined variable: id
+#0 C:\xampp\htdocs\Web-Hr\app\Views\admin\daftar\v_masuk.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 3, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('admin/daftar/v_...', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(29): view('admin/daftar/v_...', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->index()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-20 00:27:55 --> Trying to get property 'id' of non-object
+#0 C:\xampp\htdocs\Web-Hr\app\Views\admin\daftar\v_masuk.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 3, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('admin/daftar/v_...', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(29): view('admin/daftar/v_...', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->index()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-20 00:28:20 --> Argument 2 passed to form_input() must be of the type string, null given, called in C:\xampp\htdocs\Web-Hr\system\Helpers\form_helper.php on line 161
+#0 C:\xampp\htdocs\Web-Hr\system\Helpers\form_helper.php(161): form_input('id_calkar', NULL, '', 'hidden')
+#1 C:\xampp\htdocs\Web-Hr\system\Helpers\form_helper.php(153): form_hidden('id_calkar', NULL, true)
+#2 C:\xampp\htdocs\Web-Hr\app\Views\admin\daftar\v_masuk.php(106): form_hidden(Array)
+#3 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('admin/daftar/v_...', Array, true)
+#6 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(29): view('admin/daftar/v_...', Array)
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->index()
+#8 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#9 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2021-04-20 00:38:10 --> mysqli_sql_exception: Column 'id_calkar' in order clause is ambiguous in C:\xampp\htdocs\Web-Hr\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Web-Hr\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Web-Hr\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Web-Hr\app\Models\ModelDaftar.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(26): App\Models\ModelDaftar->getDaftarMasuk()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->index()
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#8 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-04-20 00:38:10 --> Column 'id_calkar' in order clause is ambiguous
+#0 C:\xampp\htdocs\Web-Hr\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Web-Hr\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Web-Hr\app\Models\ModelDaftar.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(26): App\Models\ModelDaftar->getDaftarMasuk()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->index()
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#8 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2021-04-20 00:42:57 --> mysqli_sql_exception: Column 'id_calkar' in order clause is ambiguous in C:\xampp\htdocs\Web-Hr\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Web-Hr\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Web-Hr\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Web-Hr\app\Models\ModelDaftar.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(26): App\Models\ModelDaftar->getDaftarMasuk()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->index()
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#8 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-04-20 00:42:57 --> Column 'id_calkar' in order clause is ambiguous
+#0 C:\xampp\htdocs\Web-Hr\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Web-Hr\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Web-Hr\app\Models\ModelDaftar.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(26): App\Models\ModelDaftar->getDaftarMasuk()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->index()
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#8 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2021-04-20 00:42:58 --> mysqli_sql_exception: Column 'id_calkar' in order clause is ambiguous in C:\xampp\htdocs\Web-Hr\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Web-Hr\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Web-Hr\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Web-Hr\app\Models\ModelDaftar.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(26): App\Models\ModelDaftar->getDaftarMasuk()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->index()
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#8 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-04-20 00:42:58 --> Column 'id_calkar' in order clause is ambiguous
+#0 C:\xampp\htdocs\Web-Hr\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Web-Hr\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Web-Hr\app\Models\ModelDaftar.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(26): App\Models\ModelDaftar->getDaftarMasuk()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->index()
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#8 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-04-20 01:14:18 --> Allowed fields must be specified for model: App\Models\ModelRating
+#0 C:\xampp\htdocs\Web-Hr\system\BaseModel.php(1202): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Mode...')
+#1 C:\xampp\htdocs\Web-Hr\system\BaseModel.php(729): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\xampp\htdocs\Web-Hr\system\Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\xampp\htdocs\Web-Hr\system\BaseModel.php(667): CodeIgniter\Model->insert(Object(App\Entities\Rating), false)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(41): CodeIgniter\BaseModel->save(Object(App\Entities\Rating))
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->rate()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-20 01:17:19 --> Call to undefined method App\Models\ModelRating::getRating
+#0 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(27): CodeIgniter\Model->__call('getRating', Array)
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->index()
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#3 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-20 01:17:27 --> Call to undefined method App\Models\ModelRating::getRating
+#0 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(27): CodeIgniter\Model->__call('getRating', Array)
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->index()
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#3 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-20 01:17:29 --> Call to undefined method App\Models\ModelRating::getRating
+#0 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(27): CodeIgniter\Model->__call('getRating', Array)
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->index()
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#3 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-20 01:18:12 --> Call to undefined method App\Models\ModelRating::getRating
+#0 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(27): CodeIgniter\Model->__call('getRating', Array)
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->index()
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#3 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-20 01:18:14 --> Call to undefined method App\Models\ModelRating::getRating
+#0 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(27): CodeIgniter\Model->__call('getRating', Array)
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->index()
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#3 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-20 01:18:15 --> Call to undefined method App\Models\ModelRating::getRating
+#0 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(27): CodeIgniter\Model->__call('getRating', Array)
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->index()
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#3 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-20 01:18:31 --> Call to undefined method App\Models\ModelRating::getRating
+#0 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(27): CodeIgniter\Model->__call('getRating', Array)
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->index()
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#3 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-20 01:32:21 --> Undefined variable: karyawan
+#0 C:\xampp\htdocs\Web-Hr\app\Views\admin\daftar\v_karyawan.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 53, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('admin/daftar/v_...', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(64): view('admin/daftar/v_...', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->listDiterimaKaryawan()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-20 01:34:18 --> Undefined variable: karyawan
+#0 C:\xampp\htdocs\Web-Hr\app\Views\admin\daftar\v_karyawan.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 53, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('admin/daftar/v_...', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(64): view('admin/daftar/v_...', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->listDiterimaKaryawan()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-20 01:34:20 --> Undefined variable: karyawan
+#0 C:\xampp\htdocs\Web-Hr\app\Views\admin\daftar\v_karyawan.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 53, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('admin/daftar/v_...', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(64): view('admin/daftar/v_...', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->listDiterimaKaryawan()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-20 01:34:21 --> Undefined variable: karyawan
+#0 C:\xampp\htdocs\Web-Hr\app\Views\admin\daftar\v_karyawan.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 53, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('admin/daftar/v_...', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(64): view('admin/daftar/v_...', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->listDiterimaKaryawan()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-20 01:34:35 --> Undefined index: id_karyawan
+#0 C:\xampp\htdocs\Web-Hr\app\Views\admin\daftar\v_karyawan.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 54, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('admin/daftar/v_...', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(64): view('admin/daftar/v_...', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->listDiterimaKaryawan()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-20 01:43:06 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\Web-Hr\app\Views\admin\daftar\v_detail.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('admin/daftar/v_...', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(124): view('admin/daftar/v_...', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->detailData('dist', 'img', 'user3-128x128.j...')
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-20 01:43:06 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\Web-Hr\app\Views\admin\daftar\v_detail.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('admin/daftar/v_...', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(124): view('admin/daftar/v_...', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->detailData('dist', 'img', 'user4-128x128.j...')
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-20 18:17:06 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->add()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-20 18:17:58 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->add()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-20 18:24:01 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->add()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-20 18:27:27 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->add()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-20 18:35:28 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->add()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-20 18:37:35 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->add()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-20 18:39:11 --> Call to a member function getName() on null
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->add()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-20 18:44:56 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->add()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-20 18:48:12 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->add()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-20 18:50:16 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->add()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-20 18:55:15 --> Call to a member function getError() on null
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->edit('1')
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-20 18:56:12 --> Call to a member function getError() on null
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->edit('1')
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-20 18:59:10 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->add()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-20 19:09:42 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->add()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-20 19:24:27 --> Call to a member function getError() on null
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->edit('1')
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-20 19:29:20 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->add()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-20 19:42:07 --> Undefined index: surat_kontrak
+#0 C:\xampp\htdocs\Web-Hr\app\Views\admin\v_kontrak.php(191): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 191, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('admin/v_kontrak', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Contract.php(24): view('admin/v_kontrak', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->index()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-20 19:42:09 --> Undefined index: surat_kontrak
+#0 C:\xampp\htdocs\Web-Hr\app\Views\admin\v_kontrak.php(191): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 191, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('admin/v_kontrak', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Contract.php(24): view('admin/v_kontrak', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->index()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-20 19:42:33 --> Undefined index: surat_kontrak
+#0 C:\xampp\htdocs\Web-Hr\app\Views\admin\v_kontrak.php(191): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 191, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('admin/v_kontrak', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Contract.php(24): view('admin/v_kontrak', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->index()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-20 19:42:35 --> Undefined index: surat_kontrak
+#0 C:\xampp\htdocs\Web-Hr\app\Views\admin\v_kontrak.php(191): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 191, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('admin/v_kontrak', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Contract.php(24): view('admin/v_kontrak', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->index()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-20 19:49:04 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->add()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-20 19:49:48 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->add()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-20 19:49:51 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->add()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-20 19:50:17 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->add()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-20 19:54:15 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->add()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-20 19:54:17 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->add()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-20 19:54:18 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->add()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-20 19:54:19 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->add()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-20 19:55:57 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->add()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-20 20:02:04 --> Call to a member function getError() on null
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->edit('1')
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-20 20:09:25 --> Undefined variable: kontrak
+#0 C:\xampp\htdocs\Web-Hr\app\Views\admin\v_kontrak.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 61, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('admin/v_kontrak', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Contract.php(23): view('admin/v_kontrak', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->index()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-20 20:10:19 --> Undefined variable: kontrak
+#0 C:\xampp\htdocs\Web-Hr\app\Views\admin\v_kontrak.php(149): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 149, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('admin/v_kontrak', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Contract.php(23): view('admin/v_kontrak', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->index()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-20 20:10:31 --> Undefined variable: kontrak
+#0 C:\xampp\htdocs\Web-Hr\app\Views\admin\v_kontrak.php(208): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 208, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('admin/v_kontrak', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Contract.php(23): view('admin/v_kontrak', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->index()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-20 20:11:01 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Contract->add()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contract))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2021-04-20 21:45:10 --> mysqli_sql_exception: Column 'id_calkar' in where clause is ambiguous in C:\xampp\htdocs\Web-Hr\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Web-Hr\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Web-Hr\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Web-Hr\app\Models\ModelCalkar.php(44): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Web-Hr\app\Controllers\Calkar.php(31): App\Models\ModelCalkar->getFormulir()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Calkar->index()
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calkar))
+#8 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-04-20 21:45:10 --> Column 'id_calkar' in where clause is ambiguous
+#0 C:\xampp\htdocs\Web-Hr\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Web-Hr\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Web-Hr\app\Models\ModelCalkar.php(44): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Web-Hr\app\Controllers\Calkar.php(31): App\Models\ModelCalkar->getFormulir()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Calkar->index()
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calkar))
+#8 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2021-04-20 21:47:00 --> mysqli_sql_exception: Column 'id_calkar' in where clause is ambiguous in C:\xampp\htdocs\Web-Hr\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Web-Hr\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Web-Hr\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Web-Hr\app\Models\ModelCalkar.php(44): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Web-Hr\app\Controllers\Calkar.php(31): App\Models\ModelCalkar->getFormulir()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Calkar->index()
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calkar))
+#8 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-04-20 21:47:00 --> Column 'id_calkar' in where clause is ambiguous
+#0 C:\xampp\htdocs\Web-Hr\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Web-Hr\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Web-Hr\app\Models\ModelCalkar.php(44): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Web-Hr\app\Controllers\Calkar.php(31): App\Models\ModelCalkar->getFormulir()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Calkar->index()
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calkar))
+#8 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2021-04-20 21:47:42 --> mysqli_sql_exception: Column 'id_calkar' in where clause is ambiguous in C:\xampp\htdocs\Web-Hr\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Web-Hr\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Web-Hr\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Web-Hr\app\Models\ModelCalkar.php(44): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Web-Hr\app\Controllers\Calkar.php(31): App\Models\ModelCalkar->getFormulir()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Calkar->index()
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calkar))
+#8 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-04-20 21:47:42 --> Column 'id_calkar' in where clause is ambiguous
+#0 C:\xampp\htdocs\Web-Hr\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Web-Hr\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Web-Hr\app\Models\ModelCalkar.php(44): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Web-Hr\app\Controllers\Calkar.php(31): App\Models\ModelCalkar->getFormulir()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Calkar->index()
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calkar))
+#8 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-04-20 21:49:21 --> Call to undefined method App\Models\ModelRating::getRating
+#0 C:\xampp\htdocs\Web-Hr\app\Controllers\Calkar.php(36): CodeIgniter\Model->__call('getRating', Array)
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Calkar->index()
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calkar))
+#3 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-20 21:49:23 --> Call to undefined method App\Models\ModelRating::getRating
+#0 C:\xampp\htdocs\Web-Hr\app\Controllers\Calkar.php(36): CodeIgniter\Model->__call('getRating', Array)
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Calkar->index()
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calkar))
+#3 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-20 21:49:25 --> Call to undefined method App\Models\ModelRating::getRating
+#0 C:\xampp\htdocs\Web-Hr\app\Controllers\Calkar.php(36): CodeIgniter\Model->__call('getRating', Array)
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Calkar->index()
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calkar))
+#3 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-20 21:49:28 --> Call to undefined method App\Models\ModelRating::getRating
+#0 C:\xampp\htdocs\Web-Hr\app\Controllers\Calkar.php(36): CodeIgniter\Model->__call('getRating', Array)
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Calkar->index()
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calkar))
+#3 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-04-20 21:54:21 --> mysqli_sql_exception: Column 'id_calkar' in where clause is ambiguous in C:\xampp\htdocs\Web-Hr\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Web-Hr\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Web-Hr\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Web-Hr\app\Models\ModelCalkar.php(44): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Web-Hr\app\Controllers\Calkar.php(31): App\Models\ModelCalkar->getFormulir()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Calkar->index()
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calkar))
+#8 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-04-20 21:54:21 --> Column 'id_calkar' in where clause is ambiguous
+#0 C:\xampp\htdocs\Web-Hr\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Web-Hr\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Web-Hr\app\Models\ModelCalkar.php(44): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Web-Hr\app\Controllers\Calkar.php(31): App\Models\ModelCalkar->getFormulir()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Calkar->index()
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calkar))
+#8 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2021-04-20 21:54:23 --> mysqli_sql_exception: Column 'id_calkar' in where clause is ambiguous in C:\xampp\htdocs\Web-Hr\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Web-Hr\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Web-Hr\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Web-Hr\app\Models\ModelCalkar.php(44): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Web-Hr\app\Controllers\Calkar.php(31): App\Models\ModelCalkar->getFormulir()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Calkar->index()
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calkar))
+#8 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-04-20 21:54:23 --> Column 'id_calkar' in where clause is ambiguous
+#0 C:\xampp\htdocs\Web-Hr\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Web-Hr\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Web-Hr\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Web-Hr\app\Models\ModelCalkar.php(44): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Web-Hr\app\Controllers\Calkar.php(31): App\Models\ModelCalkar->getFormulir()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Calkar->index()
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calkar))
+#8 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-04-20 22:10:02 --> Undefined variable: calkar
+#0 C:\xampp\htdocs\Web-Hr\app\Views\admin\daftar\v_masuk.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 3, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('admin/daftar/v_...', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Daftar.php(27): view('admin/daftar/v_...', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Daftar->index()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}

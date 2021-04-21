@@ -17,7 +17,11 @@ class Admin extends BaseController
 	{
 		$data = [
 			'title' => 'HR GiNK',
-			'subtitle' => 'Dashboard'
+			'subtitle' => 'Dashboard',
+			'totkaryawan' => $this->ModelAdmin->totalKaryawan(),
+			'totcalkarmasuk' => $this->ModelAdmin->totalCalkarMasuk(),
+			'totcalkarterima' => $this->ModelAdmin->totalCalkarTerima(),
+			'totcalkartolak' => $this->ModelAdmin->totalCalkarTolak(),
 		];
 		return view('admin/v_dashboard', $data);
 	}
@@ -70,5 +74,26 @@ class Admin extends BaseController
 
 		session()->setFlashdata('pesan', 'Settingan Berhasil di Perbarui !!!');
 		return redirect()->to('/admin/setting');
+	}
+
+	public function beranda()
+	{
+		$data = [
+			'title' => 'HR GiNK',
+			'subtitle' => 'Beranda',
+			'beranda' => $this->ModelAdmin->detailSetting()
+		];
+		return view('admin/v_beranda', $data);
+	}
+
+	public function saveBeranda()
+	{
+		$data = [
+			'beranda' => $this->request->getPost('beranda')
+		];
+		$this->ModelAdmin->saveSetting($data);
+
+		session()->setFlashdata('pesan', 'Beranda Berhasil di Update !!!');
+		return redirect()->to('/admin/beranda');
 	}
 }

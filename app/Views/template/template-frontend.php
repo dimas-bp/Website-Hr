@@ -28,6 +28,8 @@ $jadwal = $db->table('tb_lowongan')
     <link rel="stylesheet" href="<?= base_url() ?>/template/bower_components/Ionicons/css/ionicons.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="<?= base_url() ?>/template/dist/css/AdminLTE.min.css">
+    <!-- CSS style -->
+    <link rel="stylesheet" href="<?= base_url() ?>/template/dist/css/gink.css">
     <!-- iCheck for checkboxes and radio inputs -->
     <link rel="stylesheet" href="<?= base_url() ?>/template/plugins/iCheck/all.css">
     <!-- Bootstrap Color Picker -->
@@ -76,7 +78,6 @@ $jadwal = $db->table('tb_lowongan')
                         <ul class="nav navbar-nav">
                             <li><a href="<?= base_url() ?>">Home <span class="sr-only">(current)</span></a></li>
                             <li><a href="#">Kontak</a></li>
-                            <li><a href="#">Pengumuman</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
@@ -117,13 +118,12 @@ $jadwal = $db->table('tb_lowongan')
         <div class="content-wrapper">
             <div class="content-header">
                 <div class="container">
-                    <div class="col-sm-6">
+                    <div class="col-sm-8">
                         <?php if ($jadwal['status'] <> 1) { ?>
-                            <h1 class="text-danger"><b>Pendaftaran Sudah Tutup !!!</b>
-                                <h1>
-                                <?php } else { ?>
-                                    <h1>Lowongan Pekerjaan <?= $jadwal['lowongan'] ?><h1>
-                                        <?php } ?>
+                            <h1 class="text-danger"><b>Lowongan Sudah Tutup !!!</b></h1>
+                        <?php } else { ?>
+                            <h1>Lowongan <?= $jadwal['lowongan'] ?></h1>
+                        <?php } ?>
                     </div>
                 </div>
             </div>

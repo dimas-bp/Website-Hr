@@ -36,7 +36,9 @@ class Filters extends BaseConfig
 					'auth', 'auth/*',
 					'home', 'home/*',
 					'/',
-					'pendaftaran', 'pendaftaran/*'
+					'pendaftaran', 'pendaftaran/*',
+					'wilayah', 'wilayah/*',
+					'pekerjaan', 'pekerjaan/*'
 				]
 			],
 			'filtercalkar' => [
@@ -45,6 +47,8 @@ class Filters extends BaseConfig
 					'home', 'home/*',
 					'/',
 					'pendaftaran', 'pendaftaran/*',
+					'wilayah', 'wilayah/*',
+					'pekerjaan', 'pekerjaan/*'
 				]
 			]
 			// 'honeypot',
@@ -65,7 +69,12 @@ class Filters extends BaseConfig
 					'user', 'user/*',
 					'baner', 'baner/*',
 					'lampiran', 'lampiran/*',
-					'daftar', 'daftar/*'
+					'karyawan', 'karyawan/*',
+					'daftar', 'daftar/*',
+					'wilayah', 'wilayah/*',
+					'pekerjaan', 'pekerjaan/*',
+					'contract', 'contract/*',
+
 				]
 			],
 			'filtercalkar' => [
@@ -75,6 +84,9 @@ class Filters extends BaseConfig
 					'/',
 					'pendaftaran', 'pendaftaran/*',
 					'calkar', 'calkar/*',
+					'wilayah', 'wilayah/*',
+					'pekerjaan', 'pekerjaan/*',
+					'daftar', 'daftar/*'
 				]
 			],
 			'toolbar',

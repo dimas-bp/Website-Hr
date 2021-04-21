@@ -5,7 +5,7 @@
     <div class="col-md-12">
         <div class="box box-primary box-solid">
             <div class="box-header with-border">
-                <h3 class="box-title">Data Kehadiran</h3>
+                <h3 class="box-title"><?= $subtitle ?></h3>
 
                 <div class="box-tools pull-right">
                     <button type="button" class="btn btn-primary btn-sm btn-flat" data-toggle="modal" data-target="#add">

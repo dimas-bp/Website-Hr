@@ -20,4 +20,31 @@ class ModelAdmin extends Model
             ->where('id', '1')
             ->update($data);
     }
+
+    public function totalKaryawan()
+    {
+        return $this->db->table('tb_karyawan')->countAllResults();
+    }
+
+    public function totalCalkarMasuk()
+    {
+        return $this->db->table('tb_calkar')
+            ->where('stat_calkar', '0')
+            ->where('stat_pendaftaran', '1')
+            ->countAllResults();
+    }
+
+    public function totalCalkarTerima()
+    {
+        return $this->db->table('tb_calkar')
+            ->where('stat_calkar', '1')
+            ->countAllResults();
+    }
+
+    public function totalCalkarTolak()
+    {
+        return $this->db->table('tb_calkar')
+            ->where('stat_calkar', '2')
+            ->countAllResults();
+    }
 }

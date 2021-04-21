@@ -64,7 +64,7 @@
                     </div>
                     <div class="form-group">
                         <label>Telepon</label>
-                        <input name="no_telepon" value="<?= $setting['no_telpon'] ?>" class="form-control">
+                        <input name="no_telpon" value="<?= $setting['no_telpon'] ?>" class="form-control">
                     </div>
                     <div class="form-group">
                         <label>Deskripsi</label>

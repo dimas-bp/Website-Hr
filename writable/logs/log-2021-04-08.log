@@ -1,0 +1,153 @@
+CRITICAL - 2021-04-08 00:33:41 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Web-Hr\system\Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Web-Hr\system\Model.php(834): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Web-Hr\app\Controllers\Calkar.php(101): CodeIgniter\Model->__call('editData', Array)
+#3 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Calkar->updateDataAlamat('2')
+#4 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calkar))
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-04-08 00:34:58 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Web-Hr\system\Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Web-Hr\system\Model.php(834): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Web-Hr\app\Controllers\Calkar.php(101): CodeIgniter\Model->__call('editData', Array)
+#3 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Calkar->updateDataAlamat('2')
+#4 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calkar))
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-04-08 04:10:49 --> Too few arguments to function App\Controllers\Pekerjaan::dataBidang(), 0 passed in C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php on line 936 and exactly 1 expected
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Pekerjaan->dataBidang()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-08 04:18:16 --> Too few arguments to function App\Controllers\Pekerjaan::dataBidang(), 0 passed in C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php on line 936 and exactly 1 expected
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Pekerjaan->dataBidang()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-08 04:18:21 --> Undefined index: nama_spesialisasi
+#0 C:\xampp\htdocs\Web-Hr\app\Views\calkar\v_formulir.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 141, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('calkar/v_formul...', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Calkar.php(34): view('calkar/v_formul...', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Calkar->index()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calkar))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-08 04:18:50 --> Undefined index: nama_spesialisasi
+#0 C:\xampp\htdocs\Web-Hr\app\Views\calkar\v_formulir.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 141, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('calkar/v_formul...', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Calkar.php(34): view('calkar/v_formul...', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Calkar->index()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calkar))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-08 04:20:25 --> Undefined index: nama_spesialisasi
+#0 C:\xampp\htdocs\Web-Hr\app\Views\calkar\v_formulir.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 141, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('calkar/v_formul...', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Calkar.php(34): view('calkar/v_formul...', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Calkar->index()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calkar))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-08 04:23:52 --> Undefined index: nama_spesialisasi
+#0 C:\xampp\htdocs\Web-Hr\app\Views\calkar\v_formulir.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 141, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('calkar/v_formul...', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Calkar.php(34): view('calkar/v_formul...', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Calkar->index()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calkar))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-08 04:23:53 --> Undefined index: nama_spesialisasi
+#0 C:\xampp\htdocs\Web-Hr\app\Views\calkar\v_formulir.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 141, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('calkar/v_formul...', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Calkar.php(34): view('calkar/v_formul...', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Calkar->index()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calkar))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-08 04:24:34 --> Undefined index: nama_bidang
+#0 C:\xampp\htdocs\Web-Hr\app\Views\calkar\v_formulir.php(145): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 145, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('calkar/v_formul...', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Calkar.php(34): view('calkar/v_formul...', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Calkar->index()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calkar))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-08 04:28:32 --> Too few arguments to function App\Controllers\Pekerjaan::dataBidang(), 0 passed in C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php on line 936 and exactly 1 expected
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Pekerjaan->dataBidang()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-08 04:32:23 --> Too few arguments to function App\Controllers\Pekerjaan::dataBidang(), 0 passed in C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php on line 936 and exactly 1 expected
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Pekerjaan->dataBidang()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-08 04:32:33 --> Undefined index: nama_spesialisasi
+#0 C:\xampp\htdocs\Web-Hr\app\Views\calkar\v_formulir.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 141, Array)
+#1 C:\xampp\htdocs\Web-Hr\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Web-Hr\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Web-Hr\system\Common.php(1217): CodeIgniter\View\View->render('calkar/v_formul...', Array, true)
+#4 C:\xampp\htdocs\Web-Hr\app\Controllers\Calkar.php(34): view('calkar/v_formul...', Array)
+#5 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Calkar->index()
+#6 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Calkar))
+#7 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-08 04:36:25 --> Too few arguments to function App\Controllers\Pekerjaan::dataBidang(), 0 passed in C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php on line 936 and exactly 1 expected
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Pekerjaan->dataBidang()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-08 04:36:25 --> Too few arguments to function App\Controllers\Pekerjaan::dataBidang(), 0 passed in C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php on line 936 and exactly 1 expected
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Pekerjaan->dataBidang()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-08 04:39:23 --> Too few arguments to function App\Controllers\Pekerjaan::dataBidang(), 0 passed in C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php on line 936 and exactly 1 expected
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Pekerjaan->dataBidang()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}

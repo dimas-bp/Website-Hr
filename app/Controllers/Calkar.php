@@ -5,6 +5,10 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\ModelCalkar;
 use App\Models\ModelLampiran;
+use App\Models\ModelWilayah;
+use App\Models\ModelPekerjaan;
+use App\Models\ModelAdmin;
+use App\Models\ModelRating;
 
 class Calkar extends BaseController
 {
@@ -12,6 +16,10 @@ class Calkar extends BaseController
 	{
 		$this->ModelCalkar = new ModelCalkar();
 		$this->ModelLampiran = new ModelLampiran();
+		$this->ModelWilayah = new ModelWilayah();
+		$this->ModelPekerjaan = new ModelPekerjaan();
+		$this->ModelAdmin = new ModelAdmin();
+		$this->ModelRating = new ModelRating();
 		helper('form');
 	}
 
@@ -23,6 +31,8 @@ class Calkar extends BaseController
 			'calkar' => $this->ModelCalkar->getFormulir(),
 			'berkas' => $this->ModelCalkar->lampiran(),
 			'lampiran' => $this->ModelLampiran->getAllData(),
+			'provinsi' => $this->ModelWilayah->getProvinsi(),
+			'spesialisasi' => $this->ModelPekerjaan->getSpesialisasi(),
 			'validation' => \Config\Services::validation()
 		];
 		return view('calkar/v_formulir', $data);
@@ -36,7 +46,7 @@ class Calkar extends BaseController
 			'tempat_lahir' => $this->request->getPost('tempat_lahir'),
 			'tgl_lahir' => $this->request->getPost('tgl_lahir'),
 			'email' => $this->request->getPost('email'),
-			'nama_panggilan' => $this->request->getPost('nama_panggilan'),
+			'pendidikan' => $this->request->getPost('pendidikan'),
 			'agama' => $this->request->getPost('agama'),
 			'jk' => $this->request->getPost('jk'),
 			'no_telpon' => $this->request->getPost('no_telpon'),
@@ -84,6 +94,33 @@ class Calkar extends BaseController
 			$validation = \Config\Services::validation();
 			return redirect()->to('/calkar')->withInput()->with('validation', $validation);
 		}
+	}
+
+	public function updateDataAlamat($id_calkar)
+	{
+		$data = [
+			'id_calkar' => $id_calkar,
+			'id_provinsi' => $this->request->getPost('id_provinsi'),
+			'id_kabupaten' => $this->request->getPost('id_kabupaten'),
+			'id_kecamatan' => $this->request->getPost('id_kecamatan'),
+			'alamat' => $this->request->getPost('alamat')
+		];
+		$this->ModelCalkar->edit($data);
+		session()->setFlashdata('pesan', 'Alamat Berhasil Di Update');
+		return redirect()->to('/calkar');
+	}
+
+	public function updateDataPekerjaan($id_calkar)
+	{
+		$data = [
+			'id_calkar' => $id_calkar,
+			'id_spesialisasi' => $this->request->getPost('id_spesialisasi'),
+			'id_bidang' => $this->request->getPost('id_bidang'),
+			'jabatan' => $this->request->getPost('jabatan'),
+		];
+		$this->ModelCalkar->edit($data);
+		session()->setFlashdata('pesan', 'Alamat Berhasil Di Update');
+		return redirect()->to('/calkar');
 	}
 
 	public function addBerkas($id_calkar)
@@ -138,5 +175,27 @@ class Calkar extends BaseController
 		$this->ModelCalkar->deleteBerkas($data);
 		session()->setFlashdata('pesan', 'Berkas Berhasil Di Hapus !!!');
 		return redirect()->to(base_url('calkar'));
+	}
+
+	public function apply($id_calkar)
+	{
+		$data = array(
+			'id_calkar' => $id_calkar,
+			'stat_pendaftaran' => '1'
+		);
+		$this->ModelCalkar->edit($data);
+		session()->setFlashdata('pesan', 'Data Berhasil Dikirim !!!');
+		return redirect()->to(base_url('calkar'));
+	}
+
+	public function cetak_berkas()
+	{
+		$data = [
+			'title' => 'HR GiNK',
+			'subtitle' => 'Calon Karyawan',
+			'calkar' => $this->ModelCalkar->getFormulir(),
+			'setting' => $this->ModelAdmin->detailSetting(),
+		];
+		return view('calkar/v_cetakberkas', $data);
 	}
 }

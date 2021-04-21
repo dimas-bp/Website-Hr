@@ -1,3 +1,5 @@
+<html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,6 +32,16 @@
     <!-- Calender -->
     <link rel="stylesheet" href="<?= base_url() ?>/template/bower_components/fullcalendar/dist/fullcalendar.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>/template/bower_components/fullcalendar/dist/fullcalendar.print.min.css" media="print">
+    <!-- Bootstrap Color Picker -->
+    <link rel="stylesheet" href="<?= base_url() ?>/template/bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
+    <!-- Bootstrap time Picker -->
+    <link rel="stylesheet" href="<?= base_url() ?>/template/plugins/timepicker/bootstrap-timepicker.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="<?= base_url() ?>/template/bower_components/select2/dist/css/select2.min.css">
+    <!-- daterange picker -->
+    <link rel="stylesheet" href="<?= base_url() ?>/template/bower_components/bootstrap-daterangepicker/daterangepicker.css">
+    <!-- bootstrap datepicker -->
+    <link rel="stylesheet" href="<?= base_url() ?>/template/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -229,35 +241,25 @@
                     <li class="header">MENU</li>
                     <li class="treeview">
                         <a href="#">
-                            <i class="fa fa-users"></i>
-                            <span>Karyawan</span>
-                            <span class="pull-right-container">
-                                <i class="fa fa-angle-left pull-right"></i>
-                            </span>
-                        </a>
-                        <ul class="treeview-menu">
-                            <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> Daftar Karyawan</a></li>
-                            <li><a href="<?= base_url('hadir') ?>"><i class="fa fa-circle-o"></i> Daftar Kehadiran</a></li>
-                            <li><a href="<?= base_url('tipe') ?>"><i class="fa fa-circle-o"></i> Tipe Karyawan</a></li>
-                        </ul>
-                    </li>
-                    <li class="treeview">
-                        <a href="#">
                             <i class="fa fa-user"></i>
-                            <span>Calon Karyawan</span>
+                            <span>Recruitment</span>
                             <span class="pull-right-container">
                                 <i class="fa fa-angle-left pull-right"></i>
                             </span>
                         </a>
                         <ul class="treeview-menu">
                             <li><a href="<?= base_url('lampiran') ?>"><i class="fa fa-file"></i> Lampiran</a></li>
+                            <li><a href="<?= base_url('contract') ?>"><i class="fa fa-file-text-o"></i> Kontrak</a></li>
+                            <li><a href="<?= base_url('daftar/listDiterimaKaryawan') ?>"><i class="fa fa-group"></i> Daftar Karyawan</a></li>
+                            <li><a href="<?= base_url('hadir') ?>"><i class="fa fa-tasks"></i> Daftar Kehadiran</a></li>
+                            <li><a href="<?= base_url('tipe') ?>"><i class="fa fa-th-large"></i> Tipe Karyawan</a></li>
                             <li><a href="<?= base_url('daftar') ?>"><i class="fa fa-download"></i> Masuk</a></li>
-                            <li><a href=""><i class="fa fa-check-square"></i> Diterima</a></li>
-                            <li><a href=""><i class="fa fa-times-circle"></i> Ditolak</a></li>
+                            <li><a href="<?= base_url('daftar/listDiterima') ?>"><i class="fa fa-check-square"></i> Diterima</a></li>
+                            <li><a href="<?= base_url('daftar/listDitolak') ?>"><i class="fa fa-times-circle"></i> Ditolak</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="<?= base_url('jadwal') ?>">
+                        <a href="">
                             <i class="fa fa-calendar"></i> <span>Jadwal</span>
                         </a>
                     </li>
@@ -277,7 +279,14 @@
                         <ul class="treeview-menu">
                             <li><a href="<?= base_url('admin/setting') ?>"><i class="fa fa-gear"></i> <span> Setting Web</span></a></li>
                             <li><a href="<?= base_url('Baner') ?>"><i class="fa fa-file-image-o"></i> Setting Banner</a></li>
+                            <li><a href="<?= base_url('admin/beranda') ?>"><i class="fa fa-file-image-o"></i> Setting Beranda</a></li>
+                            <li><a href="<?= base_url('jadwal') ?>"><i class="fa fa-toggle-off"></i> Setting Lowongan</a></li>
                         </ul>
+                    </li>
+                    <li>
+                        <a href="<?= base_url('daftar/laporan') ?>">
+                            <i class="fa fa-clipboard"></i> <span>Laporan</span>
+                        </a>
                     </li>
                 </ul>
             </section>
@@ -357,8 +366,26 @@
         <script src="<?= base_url() ?>/template/dist/js/adminlte.min.js"></script>
         <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
         <script src="<?= base_url() ?>/template/dist/js/pages/dashboard.js"></script>
+        <!-- CK Editor -->
+        <script src="<?= base_url() ?>/template/bower_components/ckeditor/ckeditor.js"></script>
         <!-- AdminLTE for demo purposes -->
         <script src="<?= base_url() ?>/template/dist/js/demo.js"></script>
+        <!-- Select2 -->
+        <script src="<?= base_url() ?>/template/bower_components/select2/dist/js/select2.full.min.js"></script>
+        <!-- InputMask -->
+        <script src="<?= base_url() ?>/template/plugins/input-mask/jquery.inputmask.js"></script>
+        <script src="<?= base_url() ?>/template/plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+        <script src="<?= base_url() ?>/template/plugins/input-mask/jquery.inputmask.extensions.js"></script>
+        <!-- date-range-picker -->
+        <script src="<?= base_url() ?>/template/bower_components/moment/min/moment.min.js"></script>
+        <script src="<?= base_url() ?>/template/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+        <!-- bootstrap datepicker -->
+        <script src="<?= base_url() ?>/template/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+        <!-- bootstrap color picker -->
+        <script src="<?= base_url() ?>/template/bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+        <!-- bootstrap time picker -->
+        <script src="<?= base_url() ?>/template/plugins/timepicker/bootstrap-timepicker.min.js"></script>
+
         <script>
             $(function() {
                 $('#example1').DataTable()
@@ -395,6 +422,157 @@
             });
         </script>
         <!-- Page specific script -->
+        <script>
+            $(function() {
+                // Replace the <textarea id="editor1"> with a CKEditor
+                // instance, using default configuration.
+                CKEDITOR.replace('editor1')
+                //bootstrap WYSIHTML5 - text editor
+                $('.textarea').wysihtml5()
+            })
+        </script>
+        <script>
+            $(function() {
+                //Initialize Select2 Elements
+                $('.select2').select2()
+
+                //Datemask dd/mm/yyyy
+                $('#datemask').inputmask('dd/mm/yy', {
+                    'placeholder': 'dd/mm/yyyy'
+                })
+                //Datemask2 mm/dd/yyyy
+                $('#datemask2').inputmask('dd/mm/yyyy', {
+                    'placeholder': 'dd/mm/yyyy'
+                })
+                //Money Euro
+                $('[data-mask]').inputmask()
+
+                //Date range picker
+                $('#reservation').daterangepicker()
+                //Date range picker with time picker
+                $('#reservationtime').daterangepicker({
+                    timePicker: true,
+                    timePickerIncrement: 30,
+                    locale: {
+                        format: 'MM/DD/YYYY hh:mm A'
+                    }
+                })
+                //Date range as a button
+                $('#daterange-btn').daterangepicker({
+                        ranges: {
+                            'Today': [moment(), moment()],
+                            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                            'This Month': [moment().startOf('month'), moment().endOf('month')],
+                            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                        },
+                        startDate: moment().subtract(29, 'days'),
+                        endDate: moment()
+                    },
+                    function(start, end) {
+                        $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
+                    }
+                )
+
+                //Date picker
+                $('#datepicker').datepicker({
+                    autoclose: true,
+                    format: 'yyyy-mm-dd',
+                    daysOfWeekDisabled: "0"
+                })
+
+                //iCheck for checkbox and radio inputs
+                $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+                    checkboxClass: 'icheckbox_minimal-blue',
+                    radioClass: 'iradio_minimal-blue'
+                })
+                //Red color scheme for iCheck
+                $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
+                    checkboxClass: 'icheckbox_minimal-red',
+                    radioClass: 'iradio_minimal-red'
+                })
+                //Flat red color scheme for iCheck
+                $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
+                    checkboxClass: 'icheckbox_flat-green',
+                    radioClass: 'iradio_flat-green'
+                })
+
+                //Colorpicker
+                $('.my-colorpicker1').colorpicker()
+                //color picker with addon
+                $('.my-colorpicker2').colorpicker()
+
+                //Timepicker
+                $('.timepicker').timepicker({
+                    showInputs: false
+                })
+            })
+        </script>
+        <script>
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("btn_rating");
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+
+            function rate(id) {
+                document.getElementsByName("star")[0].value = id;
+                switch (id) {
+                    case 1:
+                        checked("f_star_1");
+                        unchecked("f_star_2");
+                        unchecked("f_star_3");
+                        unchecked("f_star_4");
+                        unchecked("f_star_5");
+                        break;
+                    case 2:
+                        checked("f_star_1");
+                        checked("f_star_2");
+                        unchecked("f_star_3");
+                        unchecked("f_star_4");
+                        unchecked("f_star_5");
+                        break;
+                    case 3:
+                        checked("f_star_1");
+                        checked("f_star_2");
+                        checked("f_star_3");
+                        unchecked("f_star_4");
+                        unchecked("f_star_5");
+                        break;
+                    case 4:
+                        checked("f_star_1");
+                        checked("f_star_2");
+                        checked("f_star_3");
+                        checked("f_star_4");
+                        unchecked("f_star_5");
+                        break;
+                    case 5:
+                        checked("f_star_1");
+                        checked("f_star_2");
+                        checked("f_star_3");
+                        checked("f_star_4");
+                        checked("f_star_5");
+                        break;
+                    default:
+                }
+            }
+
+            function checked(star_id) {
+                var element = document.getElementById(star_id);
+                element.classList.add("checked");
+            }
+
+            function unchecked(star_id) {
+                var element = document.getElementById(star_id);
+                element.classList.remove("checked");
+            }
+        </script>
 </body>
 
 </html>
