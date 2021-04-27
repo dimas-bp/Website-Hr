@@ -15,19 +15,9 @@ class ModelDaftar extends Model
 			->join('tbl_kecamatan', 'tbl_kecamatan.id_kecamatan = tb_calkar.id_kecamatan', 'left')
 			->join('tb_spesialisasi', 'tb_spesialisasi.id_spesialisasi = tb_calkar.id_spesialisasi', 'left')
 			->join('tb_bidang', 'tb_bidang.id_bidang = tb_calkar.id_bidang', 'left')
-			->join('tb_rating', 'tb_rating.id_rating = tb_calkar.id_rating', 'left')
 			->where('stat_calkar', '0')
 			->where('stat_pendaftaran', '1')
 			->orderBy('id_calkar', 'DESC')
-			->get()
-			->getResultArray();
-	}
-
-	public function get_rating_data()
-	{
-		return $this->db->table('tb_calkar')
-			->join('tb_rating', 'tb_rating.id_rating = tb_calkar.id_rating', 'left')
-			->where('id_calkar', session()->get('id_calkar'))
 			->get()
 			->getResultArray();
 	}
@@ -40,7 +30,6 @@ class ModelDaftar extends Model
 			->join('tbl_kecamatan', 'tbl_kecamatan.id_kecamatan = tb_calkar.id_kecamatan', 'left')
 			->join('tb_spesialisasi', 'tb_spesialisasi.id_spesialisasi = tb_calkar.id_spesialisasi', 'left')
 			->join('tb_bidang', 'tb_bidang.id_bidang = tb_calkar.id_bidang', 'left')
-			->join('tb_rating', 'tb_rating.id_rating = tb_calkar.id_rating', 'left')
 			->where('stat_calkar', '1')
 			->orderBy('id_calkar', 'DESC')
 			->get()
@@ -55,7 +44,6 @@ class ModelDaftar extends Model
 			->join('tbl_kecamatan', 'tbl_kecamatan.id_kecamatan = tb_calkar.id_kecamatan', 'left')
 			->join('tb_spesialisasi', 'tb_spesialisasi.id_spesialisasi = tb_calkar.id_spesialisasi', 'left')
 			->join('tb_bidang', 'tb_bidang.id_bidang = tb_calkar.id_bidang', 'left')
-			->join('tb_rating', 'tb_rating.id_rating = tb_calkar.id_rating', 'left')
 			->where('id_calkar', $id_calkar)
 			->get()
 			->getRowArray();
@@ -93,7 +81,6 @@ class ModelDaftar extends Model
 			->join('tbl_kecamatan', 'tbl_kecamatan.id_kecamatan = tb_calkar.id_kecamatan', 'left')
 			->join('tb_spesialisasi', 'tb_spesialisasi.id_spesialisasi = tb_calkar.id_spesialisasi', 'left')
 			->join('tb_bidang', 'tb_bidang.id_bidang = tb_calkar.id_bidang', 'left')
-			->join('tb_rating', 'tb_rating.id_rating = tb_calkar.id_rating', 'left')
 			->where('stat_calkar', '2')
 			->orderBy('id_calkar', 'DESC')
 			->get()

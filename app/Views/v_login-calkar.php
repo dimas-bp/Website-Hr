@@ -4,7 +4,7 @@
 
 <div class="col-sm-5">
     <div class="text-center">
-        <img class="img-fluid pad" src="<?= base_url('logo/gink.png') ?>" width="350px">
+        <img class="img-fluid pad" src="<?= base_url('logo/logoo.png') ?>" width="350px">
     </div>
 </div>
 

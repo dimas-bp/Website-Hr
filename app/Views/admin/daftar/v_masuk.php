@@ -1,6 +1,8 @@
 <?php
+
+$db = \Config\Database::connect();
 $hidden = [
-    'id_calkar' => 'id',
+    'id_calkar' => 'id_calkar',
     'star' => 0
 ];
 
@@ -65,14 +67,18 @@ $submit = [
                                 <td><?= $value['email'] ?></td>
                                 <td><?= $value['nama_lengkap'] ?></td>
                                 <td>
-                                    <span class="fa fa-star "></span>
-                                    <span class="fa fa-star "></span>
-                                    <span class="fa fa-star "></span>
-                                    <span class="fa fa-star "></span>
-                                    <span class="fa fa-star "></span>
+                                    <?php
+                                    for ($i = 0; $i < 5; $i++) {
+                                        if (($i + 1) <= $value['star']) {
+                                            echo '<span class="fa fa-star checked"></span>';
+                                        } else {
+                                            echo '<span class="fa fa-star"></span>';
+                                        }
+                                    }
+                                    ?>
                                 </td>
                                 <td>
-                                    <button type="button" id="btn_rating" data-toggle="modal"><i class="fa fa-star"></i> Rating</button>
+                                    <button class="btn btn-sm btn-warning" data-toggle="modal" data-target="#myModal<?= $value['id_calkar']; ?>"><i class="fa fa-star"></i> Rating</button>
                                     <a href="<?= base_url('daftar/detailData/' . $value['id_calkar']) ?>" class="btn btn-sm btn-info"><i class="fa fa-eye"></i> View</a>
                                     <a href="<?= base_url('daftar/diterima/' . $value['id_calkar']) ?>" class="btn btn-sm btn-success"><i class="fa fa-check"></i> Terima</a>
                                     <a href="<?= base_url('daftar/ditolak/' . $value['id_calkar']) ?>" class="btn btn-sm btn-danger"><i class="fa fa-times"></i> Tolak</a>
@@ -89,24 +95,34 @@ $submit = [
 
 </div>
 
-<div class="modal" id="myModal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Berikan Rating</h4>
+<?php foreach ($daftar as $key => $value) { ?>
+    <div class="modal" id="myModal<?= $value['id_calkar'] ?>">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Berikan Rating</h4>
+                </div>
+                <div class="modal-body">
+                    <?php echo form_open('daftar/rate/' . $value['id_calkar']) ?>
+                    <div class="form-group">
+                        <label>Tipe karyawan</label>
+                        <select name="star" class="form-control">>
+                            <option value="1" <?= ($value['star'] == "1" ? "selected" : ""); ?>>1</option>
+                            <option value="2" <?= ($value['star'] == "2" ? "selected" : ""); ?>>2</option>
+                            <option value="3" <?= ($value['star'] == "3" ? "selected" : ""); ?>>3</option>
+                            <option value="4" <?= ($value['star'] == "4" ? "selected" : ""); ?>>4</option>
+                            <option value="5" <?= ($value['star'] == "5" ? "selected" : ""); ?>>5</option>
+                        </select>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    </div>
+                </div>
+                <?php echo form_close() ?>
             </div>
-            <div class="modal-body">
-                <span class="fa fa-star " id="f_star_1" onClick="rate(1)"></span>
-                <span class="fa fa-star " id="f_star_2" onClick="rate(2)"></span>
-                <span class="fa fa-star " id="f_star_3" onClick="rate(3)"></span>
-                <span class="fa fa-star " id="f_star_4" onClick="rate(4)"></span>
-                <span class="fa fa-star " id="f_star_5" onClick="rate(5)"></span>
-            </div>
-            <?php echo form_open('daftar/rate') ?>
-            <input type="hidden" name="star" value="0">
-            <?php echo form_submit($submit) ?>
-            <?php echo form_close() ?>
         </div>
     </div>
-</div>
+
+<?php } ?>
 <?= $this->endSection() ?>

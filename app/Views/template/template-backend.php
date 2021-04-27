@@ -1,7 +1,46 @@
+<?php
+include("./connection/DB.php");
+?>
 <html>
 
 <head>
     <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <style>
+        .round {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            position: absolute;
+            margin-top: 40px;
+            margin-left: -40px;
+            background: red;
+            display: inline-block;
+            padding: 0.3rem 0.2rem !important;
+            left: 50px;
+            top: -25px;
+            z-index: 99 !important;
+        }
+
+
+
+
+
+        .round>span {
+            color: white;
+            display: block;
+            text-align: center;
+            font-size: 1rem !important;
+            padding: 0 !important;
+        }
+    </style>
+
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?= $title ?> | <?= $subtitle ?></title>
     <!-- Tell the browser to be responsive to screen width -->
@@ -73,125 +112,27 @@
                 </a>
                 <div class="navbar-custom-menu">
                     <ul class="nav navbar-nav">
-                        <!-- Messages: style can be found in dropdown.less-->
-                        <li class="dropdown messages-menu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-envelope-o"></i>
-                                <span class="label label-success">4</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="header">You have 4 messages</li>
-                                <li>
-                                    <!-- inner menu: contains the actual data -->
-                                    <ul class="menu">
-                                        <li>
-                                            <!-- start message -->
-                                            <a href="#">
-                                                <div class="pull-left">
-                                                    <img src="<?= base_url() ?>/template/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                                                </div>
-                                                <h4>
-                                                    Support Team
-                                                    <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                                                </h4>
-                                                <p>Why not buy a new awesome theme?</p>
-                                            </a>
-                                        </li>
-                                        <!-- end message -->
-                                        <li>
-                                            <a href="#">
-                                                <div class="pull-left">
-                                                    <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
-                                                </div>
-                                                <h4>
-                                                    AdminLTE Design Team
-                                                    <small><i class="fa fa-clock-o"></i> 2 hours</small>
-                                                </h4>
-                                                <p>Why not buy a new awesome theme?</p>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="pull-left">
-                                                    <img src="<?= base_url() ?>/template/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
-                                                </div>
-                                                <h4>
-                                                    Developers
-                                                    <small><i class="fa fa-clock-o"></i> Today</small>
-                                                </h4>
-                                                <p>Why not buy a new awesome theme?</p>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="pull-left">
-                                                    <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
-                                                </div>
-                                                <h4>
-                                                    Sales Department
-                                                    <small><i class="fa fa-clock-o"></i> Yesterday</small>
-                                                </h4>
-                                                <p>Why not buy a new awesome theme?</p>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="pull-left">
-                                                    <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
-                                                </div>
-                                                <h4>
-                                                    Reviewers
-                                                    <small><i class="fa fa-clock-o"></i> 2 days</small>
-                                                </h4>
-                                                <p>Why not buy a new awesome theme?</p>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="footer"><a href="#">See All Messages</a></li>
-                            </ul>
-                        </li>
                         <!-- Notifications: style can be found in dropdown.less -->
-                        <li class="dropdown notifications-menu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-bell-o"></i>
-                                <span class="label label-warning">10</span>
+
+                        <?php
+                        $find_notifications = "SELECT * FROM tb_kontrak where DATE_SUB(tgl_berakhir,INTERVAL 16 DAY) = CURDATE()";
+                        $result = mysqli_query($connection, $find_notifications);
+                        $count_active = '';
+                        $notifications_data = array();
+                        $deactive_notifications_dump = array();
+                        while ($rows = mysqli_fetch_assoc($result)) {
+                            $count_active = mysqli_num_rows($result);
+                        }
+
+                        ?>
+
+                        <li style="margin:-10px" class="notifications-menu">
+                            <a href="<?= base_url('kontrak/notif') ?>">
+                                <i class="fa fa-bell" id="over" data-value="<?php echo $count_active; ?>" style="z-index:-99 !important;font-size:25px;color:white; !important;"></i>
                             </a>
-                            <ul class="dropdown-menu">
-                                <li class="header">You have 10 notifications</li>
-                                <li>
-                                    <!-- inner menu: contains the actual data -->
-                                    <ul class="menu">
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
-                                                page and may cause design problems
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa fa-users text-red"></i> 5 new members joined
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa fa-shopping-cart text-green"></i> 25 sales made
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa fa-user text-red"></i> You changed your username
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="footer"><a href="#">View all</a></li>
-                            </ul>
+                            <?php if (!empty($count_active)) { ?>
+                                <div class="round" id="bell-count" data-value="<?php echo $count_active; ?>"><span><?php echo $count_active; ?></span></div>
+                            <?php } ?>
                         </li>
                         <!-- User Account: style can be found in dropdown.less -->
                         <li class="dropdown user user-menu">
@@ -249,7 +190,7 @@
                         </a>
                         <ul class="treeview-menu">
                             <li><a href="<?= base_url('lampiran') ?>"><i class="fa fa-file"></i> Lampiran</a></li>
-                            <li><a href="<?= base_url('contract') ?>"><i class="fa fa-file-text-o"></i> Kontrak</a></li>
+                            <li><a href="<?= base_url('kontrak') ?>"><i class="fa fa-file-text-o"></i> Kontrak</a></li>
                             <li><a href="<?= base_url('daftar/listDiterimaKaryawan') ?>"><i class="fa fa-group"></i> Daftar Karyawan</a></li>
                             <li><a href="<?= base_url('hadir') ?>"><i class="fa fa-tasks"></i> Daftar Kehadiran</a></li>
                             <li><a href="<?= base_url('tipe') ?>"><i class="fa fa-th-large"></i> Tipe Karyawan</a></li>
@@ -572,6 +513,46 @@
                 var element = document.getElementById(star_id);
                 element.classList.remove("checked");
             }
+        </script>
+
+
+
+
+
+        <script>
+            $(document).ready(function() {
+                var ids = new Array();
+                $('#over').on('click', function() {
+                    $('#list').toggle();
+                });
+
+                //Message with Ellipsis
+                $('div.msg').each(function() {
+                    var len = $(this).text().trim(" ").split(" ");
+                    if (len.length > 12) {
+                        var add_elip = $(this).text().trim().substring(0, 65) + "…";
+                        $(this).text(add_elip);
+                    }
+
+                });
+
+
+                $("#bell-count").on('click', function(e) {
+                    e.preventDefault();
+
+                    let belvalue = $('#bell-count').attr('data-value');
+
+                    if (belvalue == '') {
+
+                        console.log("inactive");
+                    } else {
+                        $(".round").css('display', 'none');
+                        $("#list").css('display', 'block');
+                    }
+                });
+
+
+            });
         </script>
 </body>
 

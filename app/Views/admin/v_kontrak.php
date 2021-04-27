@@ -5,10 +5,9 @@
     <div class="col-md-12">
         <div class="box box-primary box-solid">
             <div class="box-header with-border">
-                <h3 class="box-title"><?= $subtitle ?></h3>
-
+                <h3 class="box-title">Data kontrak</h3>
                 <div class="box-tools pull-right">
-                    <button type="button" class="btn btn-primary btn-sm btn-flat" data-toggle="modal" data-target="#add">
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#add">
                         <i class="fa fa-plus"></i> Add</button>
                 </div>
                 <!-- /.box-tools -->
@@ -31,22 +30,11 @@
                     echo '</h4></div>';
                 }
                 ?>
-                <?php
-                $errors = session()->getFlashdata('errors');
-                if (!empty($errors)) { ?>
-                    <div class="alert alert-danger" role="alert">
-                        <ul>
-                            <?php foreach ($errors as $error) : ?>
-                                <li><?= esc($error) ?></li>
-                            <?php endforeach ?>
-                        </ul>
-                    </div>
-                <?php } ?>
                 <table id="example1" class="table table-bordered table-striped">
                     <thead>
                         <tr class="bg-primary">
                             <th>No</th>
-                            <th>Nama Karyawan</th>
+                            <th>Nama kontrak</th>
                             <th>Status</th>
                             <th>Tgl mulai</th>
                             <th>Tgl berakhir</th>
@@ -58,7 +46,7 @@
                     </thead>
                     <tbody>
                         <?php $no = 1;
-                        foreach ($contract as $key => $value) { ?>
+                        foreach ($kontrak as $key => $value) { ?>
                             <tr>
                                 <td><?= $no++; ?></td>
                                 <td><?= $value['nama_karyawan']; ?></td>
@@ -67,8 +55,10 @@
                                 <td><?= $value['tgl_berakhir']; ?></td>
                                 <td><?= $value['nama_project']; ?></td>
                                 <td><?= $value['bidang']; ?></td>
-                                <td class="text-center">
-                                    <a href="<?= base_url('contract/' . $value['surat']) ?>"><i class="fa fa-file-pdf-o fa-2x text-danger"></i></a>
+                                <td class="text-center text-sm">
+                                    <a href="<?= base_url('kontrak/viewpdf/' . $value['id_kontrak']) ?>">
+                                        <i class="fa fa-file-pdf-o fa-2x text-danger"></i></a><br>
+                                    <?= number_format($value['ukuran_file'], 0) ?> Byte
                                 </td>
                                 <td>
                                     <button class="btn btn-sm btn-warning" data-toggle="modal" data-target="#edit<?= $value['id_kontrak']; ?>"><i class="fa fa-pencil-square-o"></i></button>
@@ -93,14 +83,14 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Add Kontrak</h4>
+                <h4 class="modal-title">Add kontrak</h4>
             </div>
             <div class="modal-body">
                 <?php
-                echo form_open('contract/add')
+                echo form_open_multipart('kontrak/add')
                 ?>
                 <div class="form-group">
-                    <label>Nama Karyawan</label>
+                    <label>Nama kontrak</label>
                     <input name="nama_karyawan" class="form-control" placeholder="Masukkan Nama" required>
                 </div>
                 <div class="form-group">
@@ -129,6 +119,7 @@
                     <input name="bidang" class="form-control" placeholder="Masukkan Bidang" required>
                 </div>
                 <div class="form-group">
+                    <label>Surat</label>
                     <input type="file" class="form-control" name="surat" accept=".pdf">
                     <label>Berkas (* Format PDF)</label>
                 </div>
@@ -146,21 +137,21 @@
 <!-- /.modal add -->
 
 <!-- modal edit kontrak -->
-<?php foreach ($contract as $key => $value) { ?>
+<?php foreach ($kontrak as $key => $value) { ?>
     <div class="modal fade" id="edit<?= $value['id_kontrak'] ?>">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Edit Kontrak</h4>
+                    <h4 class="modal-title">Edit kontrak</h4>
                 </div>
                 <div class="modal-body">
                     <?php
-                    echo form_open('contract/edit/' . $value['id_kontrak'])
+                    echo form_open_multipart('kontrak/edit/' . $value['id_kontrak'])
                     ?>
                     <div class="form-group">
-                        <label>Nama Karyawan</label>
+                        <label>Nama kontrak</label>
                         <input name="nama_karyawan" value="<?= $value['nama_karyawan']; ?>" class="form-control" placeholder="Masukkan Nama" required>
                     </div>
                     <div class="form-group">
@@ -188,7 +179,7 @@
                     </div>
                     <div class="form-group">
                         <label>Surat</label>
-                        <input name="surat" type="file" value="<?= $value['surat']; ?>" class="form-control" placeholder="Masukkan Project" required>
+                        <input name="surat" type="file" value="<?= $value['surat']; ?>" class="form-control" accept=".pdf">
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -204,15 +195,15 @@
 <?php } ?>
 <!-- /.modal edit -->
 
-<!-- modal delete kontrak -->
-<?php foreach ($contract as $key => $value) { ?>
+<!-- modal delete hadir -->
+<?php foreach ($kontrak as $key => $value) { ?>
     <div class="modal fade" id="delete<?= $value['id_kontrak']; ?>">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Hapus Kontrak</h4>
+                    <h4 class="modal-title">Hapus kontrak</h4>
                 </div>
                 <div class="modal-body">
                     Apakah Anda Yakin Ingin Hapus <b> <?= $value['nama_karyawan']; ?>...?</b>
@@ -228,5 +219,4 @@
     </div>
 <?php } ?>
 <!-- /.modal delete -->
-<!-- /.modal -->
 <?= $this->endSection() ?>

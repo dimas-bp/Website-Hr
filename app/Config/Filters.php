@@ -73,7 +73,7 @@ class Filters extends BaseConfig
 					'daftar', 'daftar/*',
 					'wilayah', 'wilayah/*',
 					'pekerjaan', 'pekerjaan/*',
-					'contract', 'contract/*',
+					'kontrak', 'kontrak/*',
 
 				]
 			],

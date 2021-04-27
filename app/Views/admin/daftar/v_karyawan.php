@@ -15,7 +15,7 @@
                         <tr class="bg-primary">
                             <th width="1%">No</th>
                             <th>Nama</th>
-                            <th>Tipe</th>
+                            <th>Status</th>
                             <th>Bidang</th>
                             <th>Masa Kontrak</th>
                             <th>Jenis Kelamin</th>

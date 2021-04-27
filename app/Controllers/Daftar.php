@@ -24,6 +24,7 @@ class Daftar extends BaseController
             'subtitle' => 'Pendaftaran Masuk',
             'daftar' => $this->ModelDaftar->getDaftarMasuk(),
         ];
+
         return view('admin/daftar/v_masuk', $data);
     }
 
@@ -43,7 +44,7 @@ class Daftar extends BaseController
         } else {
             $calkar = $this->ModelDaftar->detailData($id_calkar);
             if ($calkar['foto'] != "") {
-                unlink('./foto/' . $karyawan['foto']);
+                unlink('./foto/' . $calkar['foto']);
             }
 
             $newName = $file->getRandomName();
@@ -66,20 +67,16 @@ class Daftar extends BaseController
         return redirect()->to(base_url('daftar/listDiterimaKaryawan'));
     }
 
-    public function rate()
+    public function rate($id_calkar)
     {
 
-        if ($this->request->getPost()) {
-            $modelRating = new ModelRating();
-            $data = $this->request->getPost();
-            $rating = new \App\Entities\Rating();
-
-            $rating->fill($data);
-            $modelRating->save($rating);
-
-            session()->setFlashdata('terima', 'Rating Berhasil di tambahkan');
-            return redirect()->to(base_url('daftar'));
-        }
+        $data = [
+            'id_calkar' => $id_calkar,
+            'star' => $this->request->getPost('star')
+        ];
+        $this->ModelDaftar->edit($data);
+        session()->setFlashdata('pesan', 'Data Berhasil Di Update !!!');
+        return redirect()->to(base_url('daftar'));
     }
 
     public function listDiterima()

@@ -34,13 +34,14 @@
                 <table id="example1" class="table table-bordered table-striped">
                     <thead>
                         <tr class="bg-primary">
-                            <th width="50px">No</th>
-                            <th>Nama</th>
-                            <th>Tipe</th>
-                            <th>Keahlian</th>
-                            <th>Masa Kontrak</th>
-                            <th>Jenis Kelamin</th>
-                            <th>Foto</th>
+                            <th>No</th>
+                            <th>Nama Karyawan</th>
+                            <th>Status</th>
+                            <th>Tgl mulai</th>
+                            <th>Tgl berakhir</th>
+                            <th>Nama Project</th>
+                            <th>Bidang</th>
+                            <th>Surat</th>
                             <th width="100px">Action</th>
                         </tr>
                     </thead>
@@ -49,15 +50,18 @@
                         foreach ($karyawan as $key => $value) { ?>
                             <tr>
                                 <td><?= $no++; ?></td>
-                                <td><?= $value['nm_karyawan']; ?></td>
-                                <td><?= $value['tipe_kar']; ?></td>
-                                <td><?= $value['keahlian']; ?></td>
-                                <td><?= $value['masa_kontrak']; ?></td>
-                                <td><?= $value['jenis_kelamin']; ?></td>
-                                <td class="text-center"> <img class="img-circle img-fluid" src="<?= base_url('foto/' .  $value['foto']) ?>" width="50px" height="50px"> </td>
+                                <td><?= $value['nama_karyawan']; ?></td>
+                                <td><?= $value['status']; ?></td>
+                                <td><?= $value['tgl_mulai']; ?></td>
+                                <td><?= $value['tgl_berakhir']; ?></td>
+                                <td><?= $value['nama_project']; ?></td>
+                                <td><?= $value['bidang']; ?></td>
+                                <td class="text-center">
+                                    <a href="<?= base_url('karyawan/' . $value['surat']) ?>"><i class="fa fa-file-pdf-o fa-2x text-danger"></i></a>
+                                </td>
                                 <td>
-                                    <button class="btn btn-sm btn-warning" data-toggle="modal" data-target="#edit<?= $value['id_karyawan']; ?>"><i class="fa fa-pencil-square-o"></i></button>
-                                    <button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete<?= $value['id_karyawan']; ?>"><i class="fa fa-trash"></i></button>
+                                    <button class="btn btn-sm btn-warning" data-toggle="modal" data-target="#edit<?= $value['id_kontrak']; ?>"><i class="fa fa-pencil-square-o"></i></button>
+                                    <button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete<?= $value['id_kontrak']; ?>"><i class="fa fa-trash"></i></button>
                                 </td>
                             </tr>
                         <?php } ?>
@@ -86,43 +90,36 @@
                 ?>
                 <div class="form-group">
                     <label>Nama Karyawan</label>
-                    <input name="nm_karyawan" class="form-control" placeholder="Nama Karyawan" required>
+                    <input name="nama_karyawan" class="form-control" placeholder="Masukkan Nama" required>
                 </div>
                 <div class="form-group">
-                    <label>Tipe karyawan</label>
-                    <select name="tipe_kar" class="form-control">>
+                    <label>Status</label>
+                    <select name="status" class="form-control">>
                         <option value="" holder disabled selected class="btn disabled">Pilih kategori</option>
-                        <option value="Tetap" class="btn btn-primary">Tetap</option>
                         <option value="Kontrak" class="btn btn-primary">Kontrak</option>
                         <option value="Freelance" class="btn btn-primary">Freelance</option>
                     </select>
                     <!-- <input name="tipe_kar" class="form-control" placeholder="Masukkan Tipe" required> -->
                 </div>
                 <div class="form-group">
-                    <label>Keahlian</label>
-                    <input name="keahlian" class="form-control" placeholder="Keahlian" required>
+                    <label>Tgl Mulai</label>
+                    <input name="tgl_mulai" type="date" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label>Masa Kontrak</label>
-                    <div class="input-group date">
-                        <div class="input-group-addon">
-                            <i class="fa fa-calendar"></i>
-                        </div>
-                        <input type="text" name="masa_kontrak" class="form-control pull-right" id="datepicker">
-                    </div>
-                    <!-- /.input group -->
+                    <label>Tgl Berakhir</label>
+                    <input name="tgl_berakhir" type="date" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label>Jenis Kelamin</label>
-                    <select name="jenis_kelamin" class="form-control">>
-                        <option value="" holder disabled selected class="btn disabled">Jenis Kelamin</option>
-                        <option value="L" class="btn btn-primary">Laki-Laki</option>
-                        <option value="P" class="btn btn-primary">Perempuan</option>
-                    </select>
+                    <label>Nama Project</label>
+                    <input name="nama_project" class="form-control" placeholder="Masukan Project" required>
                 </div>
                 <div class="form-group">
-                    <label>Foto</label>
-                    <input type="file" name="foto" class="form-control" accept="image/*" required>
+                    <label>Bidang</label>
+                    <input name="bidang" class="form-control" placeholder="Masukkan Bidang" required>
+                </div>
+                <div class="form-group">
+                    <input type="file" class="form-control" name="surat" accept=".pdf">
+                    <label>Berkas (* Format PDF)</label>
                 </div>
             </div>
             <div class="modal-footer">
@@ -139,7 +136,7 @@
 
 <!-- modal edit karyawan -->
 <?php foreach ($karyawan as $key => $value) { ?>
-    <div class="modal fade" id="edit<?= $value['id_karyawan'] ?>">
+    <div class="modal fade" id="edit<?= $value['id_kontrak'] ?>">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -149,46 +146,38 @@
                 </div>
                 <div class="modal-body">
                     <?php
-                    echo form_open_multipart('karyawan/edit/' . $value['id_karyawan'])
+                    echo form_open_multipart('karyawan/edit/' . $value['id_kontrak'])
                     ?>
                     <div class="form-group">
                         <label>Nama Karyawan</label>
-                        <input name="nm_karyawan" value="<?= $value['nm_karyawan']; ?>" class="form-control" placeholder="Nama Karyawan" required>
+                        <input name="nama_karyawan" value="<?= $value['nama_karyawan']; ?>" class="form-control" placeholder="Masukkan Nama" required>
                     </div>
                     <div class="form-group">
-                        <label>Tipe karyawan</label>
-                        <select name="tipe_kar" class="form-control">>
-                            <option value="Tetap" <?= ($value['tipe_kar'] == "Tetap" ? "selected" : ""); ?>>Tetap</option>
-                            <option value="Kontrak" <?= ($value['tipe_kar'] == "Kontrak" ? "selected" : ""); ?>>Kontrak</option>
-                            <option value="Freelance" <?= ($value['tipe_kar'] == "Freelance" ? "selected" : ""); ?>>Freelance</option>
+                        <label>Status</label>
+                        <select name="status" class="form-control">>
+                            <option value="Kontrak" <?= ($value['status'] == "Kontrak" ? "selected" : ""); ?>>Kontrak</option>
+                            <option value="Freelance" <?= ($value['status'] == "Freelance" ? "selected" : ""); ?>>Freelance</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label>Masa Kontrak</label>
-                        <div class="input-group date">
-                            <div class="input-group-addon">
-                                <i class="fa fa-calendar"></i>
-                            </div>
-                            <input type="text" name="masa_kontrak" value="<?= $value['masa_kontrak']; ?>" class="form-control pull-right" id="datepicker">
-                        </div>
-                        <!-- /.input group -->
+                        <label>Tgl Mulai</label>
+                        <input name="tgl_mulai" type="date" value="<?= $value['tgl_mulai']; ?>" class="form-control" required>
                     </div>
                     <div class="form-group">
-                        <label>Keahlian</label>
-                        <input name="keahlian" value="<?= $value['keahlian']; ?>" class="form-control" placeholder="Keahlian" required>
+                        <label>Tgl Berakhir</label>
+                        <input name="tgl_berakhir" type="date" value="<?= $value['tgl_berakhir']; ?>" class="form-control" required>
                     </div>
                     <div class="form-group">
-                        <label>Jenis Kelamin</label>
-                        <select name="jenis_kelamin" class="form-control">>
-                            <option value="" holder disabled selected class="btn disabled">Jenis Kelamin</option>
-                            <option value="L" <?= ($value['jenis_kelamin'] == "L" ? "selected" : ""); ?>>Laki-Laki</option>
-                            <option value="P" <?= ($value['jenis_kelamin'] == "P" ? "selected" : ""); ?>>Perempuan</option>
-                        </select>
+                        <label>Nama Project</label>
+                        <input name="nama_project" value="<?= $value['nama_project']; ?>" class="form-control" placeholder="Masukkan Project" required>
                     </div>
                     <div class="form-group">
-                        <label>Ganti Foto</label>
-                        <input type="file" name="foto" accept="image/*" class="form-control">
-                        <img src="<?= base_url('foto/' . $value['foto']) ?>" width="100px" height="100px">
+                        <label>Bidang</label>
+                        <input name="bidang" value="<?= $value['bidang']; ?>" class="form-control" placeholder="Masukkan Bidang" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Surat</label>
+                        <input name="surat" type="file" value="<?= $value['surat']; ?>" class="form-control" accept=".pdf">
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -206,7 +195,7 @@
 
 <!-- modal delete hadir -->
 <?php foreach ($karyawan as $key => $value) { ?>
-    <div class="modal fade" id="delete<?= $value['id_karyawan']; ?>">
+    <div class="modal fade" id="delete<?= $value['id_kontrak']; ?>">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -215,11 +204,11 @@
                     <h4 class="modal-title">Hapus karyawan</h4>
                 </div>
                 <div class="modal-body">
-                    Apakah Anda Yakin Ingin Hapus <b> <?= $value['nm_karyawan']; ?>...?</b>
+                    Apakah Anda Yakin Ingin Hapus <b> <?= $value['nama_karyawan']; ?>...?</b>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Cancel</button>
-                    <a href="<?= base_url('karyawan/delete_karyawan/' . $value['id_karyawan']) ?>" type="submit" class="btn btn-danger">Hapus</a>
+                    <a href="<?= base_url('karyawan/delete_karyawan/' . $value['id_kontrak']) ?>" type="submit" class="btn btn-danger">Hapus</a>
                 </div>
             </div>
             <!-- /.modal-content -->
