@@ -37,6 +37,8 @@
                             <th width="50px">No</th>
                             <th>Nama Karyawan</th>
                             <th>Tipe</th>
+                            <th>Bulan</th>
+                            <th>Tahun</th>
                             <th>Izin</th>
                             <th>Cuti</th>
                             <th>Alfa</th>
@@ -50,6 +52,8 @@
                                 <td><?= $no++; ?></td>
                                 <td><?= $value['nm_kehadiran']; ?></td>
                                 <td><?= $value['tipe_kar']; ?></td>
+                                <td><?= $value['bulan']; ?></td>
+                                <td><?= $value['tahun']; ?></td>
                                 <td><?= $value['izin']; ?></td>
                                 <td><?= $value['cuti']; ?></td>
                                 <td><?= $value['alfa']; ?></td>
@@ -97,16 +101,39 @@
                     <!-- <input name="tipe_kar" class="form-control" placeholder="Masukkan Tipe" required> -->
                 </div>
                 <div class="form-group">
+                    <label>Bulan</label>
+                    <select name="bulan" class="form-control">>
+                        <option value="" holder disabled selected class="btn disabled">Pilih Bulan</option>
+                        <option value="Januari" class="btn btn-primary">Januari</option>
+                        <option value="Febuari" class="btn btn-primary">Febuari</option>
+                        <option value="Maret" class="btn btn-primary">Maret</option>
+                        <option value="April" class="btn btn-primary">April</option>
+                        <option value="Mei" class="btn btn-primary">Mei</option>
+                        <option value="Juni" class="btn btn-primary">Juni</option>
+                        <option value="Juli" class="btn btn-primary">Juli</option>
+                        <option value="Agustus" class="btn btn-primary">Agustus</option>
+                        <option value="September" class="btn btn-primary">September</option>
+                        <option value="Oktober" class="btn btn-primary">Oktober</option>
+                        <option value="November" class="btn btn-primary">November</option>
+                        <option value="Desember" class="btn btn-primary">Desember</option>
+                    </select>
+                    <!-- <input name="tipe_kar" class="form-control" placeholder="Masukkan Tipe" required> -->
+                </div>
+                <div class="form-group">
+                    <label>Tahun</label>
+                    <input type="number" name="tahun" class="form-control" placeholder="Masukkan Tahun" min="2020" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" required>
+                </div>
+                <div class="form-group">
                     <label>Izin</label>
-                    <input name="izin" class="form-control" placeholder="Masukkan Izin" required>
+                    <input type="number" name="izin" class="form-control" placeholder="Masukkan Izin" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" required>
                 </div>
                 <div class="form-group">
                     <label>Cuti</label>
-                    <input name="cuti" class="form-control" placeholder="Masukkan Cuti" required>
+                    <input type="number" name="cuti" class="form-control" placeholder="Masukkan Cuti" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" required>
                 </div>
                 <div class="form-group">
                     <label>Alfa</label>
-                    <input name="alfa" class="form-control" placeholder="Masukkan Alfa" required>
+                    <input type="number" name="alfa" class="form-control" placeholder="Masukkan Alfa" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" required>
                 </div>
             </div>
             <div class="modal-footer">
@@ -148,16 +175,37 @@
                         </select>
                     </div>
                     <div class="form-group">
+                        <label>Bulan</label>
+                        <select name="bulan" class="form-control">>
+                            <option value="Januari" <?= ($value['bulan'] == "Januari" ? "selected" : ""); ?>>Januari</option>
+                            <option value="Febuari" <?= ($value['bulan'] == "Febuari" ? "selected" : ""); ?>>Febuari</option>
+                            <option value="Maret" <?= ($value['bulan'] == "Maret" ? "selected" : ""); ?>>Maret</option>
+                            <option value="April" <?= ($value['bulan'] == "April" ? "selected" : ""); ?>>April</option>
+                            <option value="Mei" <?= ($value['bulan'] == "Mei" ? "selected" : ""); ?>>Mei</option>
+                            <option value="Juni" <?= ($value['bulan'] == "Juni" ? "selected" : ""); ?>>Juni</option>
+                            <option value="July" <?= ($value['bulan'] == "July" ? "selected" : ""); ?>>July</option>
+                            <option value="Agustus" <?= ($value['bulan'] == "Agustus" ? "selected" : ""); ?>>Agustus</option>
+                            <option value="September" <?= ($value['bulan'] == "September" ? "selected" : ""); ?>>September</option>
+                            <option value="Oktober" <?= ($value['bulan'] == "Oktober" ? "selected" : ""); ?>>Oktober</option>
+                            <option value="November" <?= ($value['bulan'] == "November" ? "selected" : ""); ?>>November</option>
+                            <option value="Desember" <?= ($value['bulan'] == "Desember" ? "selected" : ""); ?>>Desember</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Tahun</label>
+                        <input type="number" name="tahun" value="<?= $value['tahun']; ?>" class="form-control" placeholder="Masukkan Tahun" min="2020" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" required>
+                    </div>
+                    <div class="form-group">
                         <label>Izin</label>
-                        <input name="izin" value="<?= $value['izin']; ?>" class="form-control" placeholder="Masukkan Izin" required>
+                        <input type="number" name="izin" value="<?= $value['izin']; ?>" class="form-control" placeholder="Masukkan Izin" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" required>
                     </div>
                     <div class="form-group">
                         <label>Cuti</label>
-                        <input name="cuti" value="<?= $value['cuti']; ?>" class="form-control" placeholder="Masukkan Cuti" required>
+                        <input type="number" name="cuti" value="<?= $value['cuti']; ?>" class="form-control" placeholder="Masukkan Cuti" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" required>
                     </div>
                     <div class="form-group">
                         <label>Alfa</label>
-                        <input name="alfa" value="<?= $value['alfa']; ?>" class="form-control" placeholder="Masukkan Alfa" required>
+                        <input type="number" name="alfa" value="<?= $value['alfa']; ?>" class="form-control" placeholder="Masukkan Alfa" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" required>
                     </div>
                 </div>
                 <div class="modal-footer">

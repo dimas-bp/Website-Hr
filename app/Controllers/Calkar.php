@@ -116,10 +116,10 @@ class Calkar extends BaseController
 			'id_calkar' => $id_calkar,
 			'id_spesialisasi' => $this->request->getPost('id_spesialisasi'),
 			'id_bidang' => $this->request->getPost('id_bidang'),
-			'jabatan' => $this->request->getPost('jabatan'),
+			'id_skill' => $this->request->getPost('id_skill'),
 		];
 		$this->ModelCalkar->edit($data);
-		session()->setFlashdata('pesan', 'Alamat Berhasil Di Update');
+		session()->setFlashdata('pesan', 'Pekerjaan Berhasil Di Update');
 		return redirect()->to('/calkar');
 	}
 

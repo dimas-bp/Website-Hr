@@ -5,12 +5,6 @@ include("./connection/DB.php");
 
 <head>
     <meta charset="utf-8">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
     <style>
         .round {
             width: 20px;
@@ -200,13 +194,13 @@ include("./connection/DB.php");
                         </ul>
                     </li>
                     <li>
-                        <a href="">
-                            <i class="fa fa-calendar"></i> <span>Jadwal</span>
+                        <a href="<?= base_url('user') ?>">
+                            <i class="fa fa-user"></i> <span>User</span>
                         </a>
                     </li>
                     <li>
-                        <a href="<?= base_url('user') ?>">
-                            <i class="fa fa-user"></i> <span>User</span>
+                        <a href="<?= base_url('daftar/laporan') ?>">
+                            <i class="fa fa-clipboard"></i> <span>Laporan</span>
                         </a>
                     </li>
                     <li class="treeview">
@@ -223,11 +217,6 @@ include("./connection/DB.php");
                             <li><a href="<?= base_url('admin/beranda') ?>"><i class="fa fa-file-image-o"></i> Setting Beranda</a></li>
                             <li><a href="<?= base_url('jadwal') ?>"><i class="fa fa-toggle-off"></i> Setting Lowongan</a></li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="<?= base_url('daftar/laporan') ?>">
-                            <i class="fa fa-clipboard"></i> <span>Laporan</span>
-                        </a>
                     </li>
                 </ul>
             </section>

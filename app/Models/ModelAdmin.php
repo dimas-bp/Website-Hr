@@ -23,7 +23,9 @@ class ModelAdmin extends Model
 
     public function totalKaryawan()
     {
-        return $this->db->table('tb_karyawan')->countAllResults();
+        return $this->db->table('tb_calkar')
+            ->where('stat_calkar', '1')
+            ->countAllResults();
     }
 
     public function totalCalkarMasuk()

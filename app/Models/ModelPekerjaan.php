@@ -21,4 +21,12 @@ class ModelPekerjaan extends Model
             ->get()
             ->getResultArray();
     }
+
+    public function getSkill($id_bidang)
+    {
+        return $this->db->table('tb_skill')
+            ->where('id_bidang', $id_bidang)
+            ->get()
+            ->getResultArray();
+    }
 }

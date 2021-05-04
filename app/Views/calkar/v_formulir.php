@@ -73,7 +73,7 @@
                                     <?= ($calkar['tempat_lahir'] == null) ? '<p class="text-danger">Wajib Diisi !!</p>' : '<p>' . $calkar['tempat_lahir'] . '</p>' ?>
                                     <strong><i class="fa fa-calendar margin-r-5"></i>Tanggal Lahir</strong>
                                     <?= ($calkar['tgl_lahir'] == null) ? '<p class="text-danger">Wajib Diisi !!</p>' : '<p>' . $calkar['tgl_lahir'] . '</p>' ?>
-                                    <strong><i class="fa fa-table margin-r-5"></i> Email</strong>
+                                    <strong><i class="fa fa-envelope-o margin-r-5"></i> Email</strong>
                                     <?= ($calkar['email'] == null) ? '<p class="text-danger">Wajib Diisi !!</p>' : '<p>' . $calkar['email'] . '</p>' ?>
                                 </div>
                                 <div class="col-sm-6">
@@ -88,7 +88,7 @@
                                     <?= ($calkar['jk'] == null) ? '<p class="text-danger">Wajib Diisi !!</p>' : '<p>' . $jk . '</p>' ?>
                                     <strong><i class="fa fa-table margin-r-5"></i> Agama</strong>
                                     <?= ($calkar['agama'] == null) ? '<p class="text-danger">Wajib Diisi !!</p>' : '<p>' . $calkar['agama'] . '</p>' ?>
-                                    <strong><i class="fa fa-table margin-r-5"></i> No Telpon</strong>
+                                    <strong><i class="fa fa-phone margin-r-5"></i> No Telpon</strong>
                                     <?= ($calkar['no_telpon'] == null) ? '<p class="text-danger">Wajib Diisi !!</p>' : '<p>' . $calkar['no_telpon'] . '</p>' ?>
                                 </div>
                             </div>
@@ -127,7 +127,7 @@
                 <div class="col-sm-12">
                     <div class="box box-outline box-primary">
                         <div class="box-header with-border">
-                            <i class="fa fa-home"></i>
+                            <i class="fa  fa-th-large"></i>
                             <h3 class="box-title"><b>Pekerjaan</b></h3>
                             <div class="box-tools">
                                 <?php if ($calkar['stat_pendaftaran'] == 0) { ?>
@@ -138,14 +138,14 @@
                         <div class="box-body">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <strong><i class="fa fa-map-marker margin-r-5"></i> Spesialisasi</strong>
+                                    <strong><i class="fa fa fa-table margin-r-5"></i> Skill</strong>
                                     <?= ($calkar['nama_spesialisasi'] == null) ? '<p class="text-danger">Wajib Diisi !!</p>' : '<p>' . $calkar['nama_spesialisasi'] . '</p>' ?>
+                                    <strong><i class="fa fa fa-table margin-r-5"></i>Bidang Pekerjaan</strong>
+                                    <?= ($calkar['nama_bidang'] == null) ? '<p class="text-danger">Wajib Diisi !!</p>' : '<p>' . $calkar['nama_bidang'] . '</p>' ?>
                                 </div>
                                 <div class="col-sm-6">
-                                    <strong><i class="fa fa-map-marker margin-r-5"></i>Bidang Pekerjaan</strong>
-                                    <?= ($calkar['nama_bidang'] == null) ? '<p class="text-danger">Wajib Diisi !!</p>' : '<p>' . $calkar['nama_bidang'] . '</p>' ?>
-                                    <strong><i class="fa fa-map-marker margin-r-5"></i>Jabatan</strong>
-                                    <?= ($calkar['jabatan'] == null) ? '<p class="text-danger">Wajib Diisi !!</p>' : '<p>' . $calkar['jabatan'] . '</p>' ?>
+                                    <strong><i class="fa fa fa-table margin-r-5"></i>Spesialisasi</strong>
+                                    <?= ($calkar['nama_skill'] == null) ? '<p class="text-danger">Wajib Diisi !!</p>' : '<p>' . $calkar['nama_skill'] . '</p>' ?>
                                 </div>
                             </div>
                         </div>
@@ -207,7 +207,7 @@
     <div class="col-sm-12">
         <div class="alert alert-info alert-dismissible">
             <h4><i class="icon fa fa-download"></i> **SELAMAT KAMU DI TERIMA**</h4>
-            Silahkan Cetak Berkas <a href="">Disini</a>
+            Silahkan Cek Email <span class="text-blue"><b><?= $calkar['email'] ?></b>
         </div>
     </div>
 <?php } else { ?>
@@ -360,9 +360,9 @@
                 echo form_open_multipart('calkar/updateDataPekerjaan/' . $calkar['id_calkar'])
                 ?>
                 <div class="form-group">
-                    <label>Spesialisasi</label>
+                    <label>Skill</label>
                     <select name="id_spesialisasi" id="spesialisasi" class="form-control">
-                        <option value="">-- Pilih Spesialisasi --</option>
+                        <option value="">-- Pilih Skill --</option>
                         <?php foreach ($spesialisasi as $key => $value) { ?>
                             <option value="<?= $value['id_spesialisasi'] ?>"><?= $value['nama_spesialisasi'] ?></option>
                         <?php } ?>
@@ -375,14 +375,9 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label>Jabatan</label>
-                    <select name="jabatan" class="form-control">>
-                        <option value="">-- Pilih Jabatan --</option>
-                        <option value="CEO" <?= ($calkar['jabatan'] == "CEO" ? "selected" : ""); ?>>CEO/Direktur/Manajer Senior</option>
-                        <option value="Manajer" <?= ($calkar['jabatan'] == "Manajer" ? "selected" : ""); ?>>Manajer/Asisten Manajer</option>
-                        <option value="Supervisor" <?= ($calkar['jabatan'] == "Supervisor" ? "selected" : ""); ?>>Supervisor/Koordinator</option>
-                        <option value="Pegawai" <?= ($calkar['jabatan'] == "Pegawai" ? "selected" : ""); ?>>Pegawai</option>
-                        <option value="Lulusan" <?= ($calkar['jabatan'] == "Lulusan" ? "selected" : ""); ?>>Lulusan baru/Pengalan Kerja kurang dari 1 tahun</option>
+                    <label>Spesialisasi</label>
+                    <select name="id_skill" id="skill" class="form-control">>
+                        <option value="">-- Pilih Spesialisasi --</option>
                     </select>
                     <!-- <input name="tipe_kar" class="form-control" placeholder="Masukkan Tipe" required> -->
                 </div>
@@ -557,6 +552,18 @@
                 url: '<?= base_url('Pekerjaan/dataBidang') ?>/' + id_spesialisasi,
                 success: function(html) {
                     $("#bidang").html(html);
+                }
+            });
+        });
+    });
+    $(document).ready(function() {
+        $("#bidang").change(function() {
+            var id_bidang = $("#bidang").val();
+            $.ajax({
+                type: 'GET',
+                url: '<?= base_url('Pekerjaan/dataSkill') ?>/' + id_bidang,
+                success: function(html) {
+                    $("#skill").html(html);
                 }
             });
         });

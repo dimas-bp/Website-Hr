@@ -1,0 +1,14 @@
+CRITICAL - 2021-05-03 01:25:36 --> Too few arguments to function App\Controllers\Pekerjaan::dataBidang(), 0 passed in C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php on line 936 and exactly 1 expected
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Pekerjaan->dataBidang()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-05-03 02:13:23 --> Too few arguments to function App\Controllers\Pekerjaan::dataBidang(), 0 passed in C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php on line 936 and exactly 1 expected
+#0 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(936): App\Controllers\Pekerjaan->dataBidang()
+#1 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pekerjaan))
+#2 C:\xampp\htdocs\Web-Hr\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Web-Hr\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Web-Hr\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}

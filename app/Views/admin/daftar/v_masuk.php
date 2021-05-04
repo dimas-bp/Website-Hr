@@ -24,8 +24,7 @@ $submit = [
                 <h3 class="box-title"><?= $subtitle ?></h3>
 
                 <div class="box-tools pull-right">
-                    <button type="button" class="btn btn-primary btn-sm btn-flat" data-toggle="modal" data-target="#myModal">
-                        <i class="fa fa-plus"></i> Add </button>
+
                 </div>
                 <!-- /.box-tools -->
             </div>
@@ -105,7 +104,7 @@ $submit = [
                 <div class="modal-body">
                     <?php echo form_open('daftar/rate/' . $value['id_calkar']) ?>
                     <div class="form-group">
-                        <label>Tipe karyawan</label>
+                        <label>Rating</label>
                         <select name="star" class="form-control">>
                             <option value="1" <?= ($value['star'] == "1" ? "selected" : ""); ?>>1</option>
                             <option value="2" <?= ($value['star'] == "2" ? "selected" : ""); ?>>2</option>

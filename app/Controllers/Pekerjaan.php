@@ -20,4 +20,13 @@ class Pekerjaan extends BaseController
             echo '<option value="' . $value['id_bidang'] . '">' . $value['nama_bidang'] . '</option>';
         }
     }
+
+    public function dataSkill($id_bidang)
+    {
+        $data = $this->ModelPekerjaan->getSkill($id_bidang);
+        echo '<option value="">--Pilih Spesialisasi--</option>';
+        foreach ($data as $key => $value) {
+            echo '<option value="' . $value['id_skill'] . '">' . $value['nama_skill'] . '</option>';
+        }
+    }
 }

@@ -77,7 +77,6 @@ $jadwal = $db->table('tb_lowongan')
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">
                             <li><a href="<?= base_url() ?>">Home <span class="sr-only">(current)</span></a></li>
-                            <li><a href="#">Kontak</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
